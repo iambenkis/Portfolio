@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+    padding: .7rem 1rem;
+    color: rgb(13, 97, 253);
+    margin-bottom: 10vh;
+}
+
+.nav-bar i{
+    font-size: 1.2rem;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.nav-bar i:hover{
+    font-size: 1.7rem; 
+    color: rgb(51, 51, 51);
+}
+
+
+.header{ 
+    width: 100%; 
+    height: 100vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    padding: 1rem; 
+    color: rgb(4, 4, 59);
+    background-image: url(./images/shapes.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;  
+    margin-top: 4rem;
+    background-color: #fff;
+}
+
+.container {
+    margin-top: 5rem;
+}
+
+.header h1 {
+    font-size: 2.3rem;
+    margin-bottom: 1.5rem;
+    color: #091E42;
+}
+.header p {
+    margin-bottom: 1rem;
+    color:  #344563;
+}
+
+.connect { 
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.connect h2{
+    color: #7F8CFF;
+    font-weight: 300; 
+    margin-bottom: .7rem;
+}
+
+.connect .icons{
+    display: flex; 
+}
+
+.icon {
+    margin-right: 1rem;
+}
+
+.icon i{
+    font-size: 2rem;
+    color:  #505F79;
+}
+
+ 
