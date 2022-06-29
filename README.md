@@ -1,56 +1,48 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
-
+# Portfolio Site Skeleton
+---------------------------
 > Description the project.
-
+* Created mobile view of the header and the headline section for a portfolio website
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
-
-
+* HTML
+* CSS
+ 
 ## Getting Started
 
 **This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
+Figma HTML CSS
+
 ### Setup
+
+    * git
+    * github 
+    * VsCode 
+    * Figma (Optional)
 
 ### Install
 
+Get Figma design ![here](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=0%3A1)
+ 
 ### Usage
 
-### Run tests
-
-### Deployment
-
-
-
+    * Visit the github repository and clone ![here](https://github.com/iambenkis/Portfolio.git)
+    * Start  editing using your local development environment
+ 
 ## Authors
 
-👤 **Author1**
+👤  **Benjamin Kisenge**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+* GitHub: [@benjamin kisenge](https://github.com/iambenkis)
+* Twitter: [@benjamin kisenge](https://twitter.com/iambenkis)
+* LinkedIn: [benjamin kisenge](https://www.linkedin.com/in/ben-kisenge/)
 
 ## 🤝 Contributing
 
@@ -64,9 +56,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+* Hat tip to anyone whose code was used
+* Inspiration
+* etc
 
 ## 📝 License
 
