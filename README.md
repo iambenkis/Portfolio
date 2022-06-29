@@ -22,10 +22,10 @@ Figma HTML CSS
 
 ### Setup
 
-    * git
-    * github 
-    * VsCode 
-    * Figma (Optional)
+* git
+* github 
+* VsCode 
+* Figma (Optional)
 
 ### Install
 
@@ -33,8 +33,8 @@ Get Figma design ![here](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Micro
  
 ### Usage
 
-    * Visit the github repository and clone ![here](https://github.com/iambenkis/Portfolio.git)
-    * Start  editing using your local development environment
+* Visit the github repository and clone ![here](https://github.com/iambenkis/Portfolio.git)
+* Start  editing using your local development environment
  
 ## Authors
 
