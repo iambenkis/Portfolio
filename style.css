@@ -1,3 +1,4 @@
+/* general style  */
 *{
     padding: 0;
     margin: 0;
@@ -8,6 +9,8 @@
 li {
     list-style: none;
 }
+
+/* navbar style */
 
 .nav-bar {
     display: flex;
@@ -30,6 +33,7 @@ li {
     color: rgb(51, 51, 51);
 }
 
+/* header section style  */
 
 .header{ 
     width: 100%; 
