@@ -28,7 +28,7 @@ Figma HTML CSS
 
 ### Install
 
-Get Figma design ![here](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=0%3A1)
+Get Figma design ![here](https://www.figma.com/files/recent?fuid=1090304969756235788)
  
 ### Usage
 
