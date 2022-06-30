@@ -12,6 +12,8 @@ li {
 
 /* navbar style */
 .nav-bar {
+  position: absolute;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -19,6 +21,7 @@ li {
   padding: 0.7rem 1rem;
   color: rgb(13, 97, 253);
   margin-bottom: 10vh;
+  z-index: 10;
 }
 
 .nav-bar i {
@@ -38,22 +41,24 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 1rem;
+  padding: 0 24px;
   color: rgb(4, 4, 59);
   background-image: url(./images/shapes.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin-top: 4rem;
+  margin-top: 50px;
   background-color: #fff;
+  z-index: 0;
 }
 
 .container {
-  margin-top: 5rem;
+  /* margin-top: 206px; */
 }
 
 .header h1 {
-  font-size: 50px;
+  font-size: 40px;
+  margin-top: -2rem;
   margin-bottom: 1.5rem;
   color: #091e42;
   line-height: 52px;
