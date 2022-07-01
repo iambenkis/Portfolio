@@ -1,0 +1,86 @@
+/* general style  */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  height: 100vh;
+  background-image: url(./images/shapes.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position-y: 1.5rem;
+}
+
+.nav-bar {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 24px;
+  color: #6070ff;
+}
+
+.nav-bar h1 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.nav-bar i {
+  font-size: 16px;
+}
+
+.container {
+  height: 100%;
+  padding: 1rem 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 4rem;
+}
+
+.container h1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+  margin: 3rem 0 12px 0;
+}
+
+.container p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.connect h2 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+  margin: 12px auto;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.icons a {
+  color: #505f79;
+}
