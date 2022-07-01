@@ -13,14 +13,25 @@ li {
 a {
   text-decoration: none;
 }
+p{
+  color: #344563;
+}
+h1{
+  color: #172b4d;
+}
+body{
+  background-color:  #e5e5e5b0;
+}
 
 .header {
-  height: 100vh;
+  height: 718px;
   background-image: url(./images/shapes.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position-y: 1.5rem;
+  background-size: contain;
+  background-position-y: 3rem;
+  background-color: #fff;
+  border-bottom-left-radius: 50px;
 }
 
 .nav-bar {
@@ -33,7 +44,7 @@ a {
   color: #6070ff;
 }
 
-.nav-bar h1 {
+.nav-bar a {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -56,15 +67,13 @@ a {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  color: #172b4d;
   margin: 3rem 0 12px 0;
 }
 
 .container p {
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
-  color: #344563;
+  line-height: 24px; 
 }
 
 .connect h2 {
@@ -84,3 +93,85 @@ a {
 .icons a {
   color: #505f79;
 }
+
+.project {
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.project-img {
+  width: 100%; 
+}
+.project-title {
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 700;
+}
+.caption{
+  width: 100%;
+  display: flex; 
+  align-items: center;
+  margin: 1rem auto;
+}
+.project .text{
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+#canopy{
+  color:  #344563;
+}
+.caption h3{
+  font-size: 13px;
+  line-height: 16px;
+  margin-right: .5rem;
+  color: #C1C7D0;
+}
+.caption img{
+  margin-right: .5rem;
+  width: 8px;
+  height: 8px;
+}
+.languages{
+  display: flex;
+  margin: 1rem auto;
+}
+.languages li {
+  padding: .2rem .5rem;
+  background-color: #EBEBFF;
+  color: #6070FF;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  border-radius: 8px;
+  margin-right: .5rem;
+}
+button{
+  border: 1px solid #6070ff;
+  color: #396DF2;
+  background-color: #fff;
+  padding: .5rem 1rem;
+  border-radius: 8px;
+  transition: .5s;
+}
+button:hover{ 
+  background-color: #396DF2;
+  color: #fff; 
+}
+.projects-container{
+  margin: 100px 24px;
+  display: grid;
+  grid-template-rows: repeat(4,2fr);
+  gap: 114px;
+}
+/* About section */
+.about{
+  background-color: #fff;
+  padding: 114px 24px;
+  border-top-right-radius: 50px;
+  margin: .7rem;
+}
+
