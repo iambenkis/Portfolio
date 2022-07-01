@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Portfolio Site Skeleton
---------------------------- 
-* Created mobile view of the header and the headline section for a portfolio website
+# Portfolio: mobile version
+ 
+* created mobile website with sections that list my portfolio projects.
 
 ## Built With
 
@@ -14,6 +14,12 @@
 **This is an example of how you may give instructions on setting up your project locally.**
 
 To get a local copy up and running follow these simple example steps.
+
+* copy this link ```https://github.com/iambenkis/Portfolio.git```
+* Get the directory that you want to clone the repository.
+* Open the command prompt in this directory.
+* Clone by using this command : ```git clone https://github.com/iambenkis/Portfolio.git```
+* Got to the cloned folder in your prompt command using ```cd Portfolio```
 
 ### Prerequisites
 
