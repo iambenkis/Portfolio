@@ -300,6 +300,12 @@ button:hover {
   margin: 40px;
 }
 
+.input-field-box textarea,
+input {
+  color: #B3BAC5;
+  background-color: #fff;
+}
+
 .input-field {
   align-items: center;
   border-radius: 8px;
