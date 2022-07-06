@@ -260,89 +260,94 @@ button:hover {
 }
 
 .contact-me {
-  background-image: url("/images/back-shap.png");
-  background-position: left 270px top 50px;
+  height: 730px;
+  background-image: url("./images/contact-form.png");
+  background-position: 100% 100%;
+  background-size: contain;
   background-repeat: no-repeat;
   background-color: #6070ff;
+  border-top-left-radius: 100px;
+  color: #ebebff;
+  padding: 24px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-top: 50px;
-  border-top-left-radius: 100px;
-  color: #EBEBFF;
-  padding: 24px;
+  justify-content: center;
 }
 
 .contact-me-text {
-  margin-top: 103px;
-  color: #EBEBFF;
+  margin-top: 70px;
+  color: #ebebff;
   font-size: 40px;
   line-height: 52px;
   font-weight: 700;
-  font-family: 'Poppins', sans-serif;
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 .contact-me-brief {
-  color: #EBEBFF;
+  color: #ebebff;
   font-size: 20px;
-  line-height: 22px;
-  font-weight: 400;
-  margin: 40px;
-  font-family: 'Poppins', sans-serif;
+  line-height: 30px;
   text-align: center;
 }
 
 .input-field-box {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
   margin: 40px;
 }
 
-.input-field-box textarea,
+textarea,
 input {
-  color: #B3BAC5;
+  color: #b3bac5;
   background-color: #fff;
+  width: 19rem;
+  height: 2.5rem;
+  margin-bottom: 15px;
+  padding-left: 0.4rem;
+  border: solid 1px  #cfd8dc;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+textarea {
+  height: 10rem;
+  color: #b3bac5;
 }
 
 .input-field {
   align-items: center;
-  border-radius: 8px;
+  border-radius: 5px;
   font-weight: 400;
   font-size: 17px;
   line-height: 24px;
-  height: 24px;
-  padding: 10px;
 }
 
 .write-message {
-  border-radius: 8px;
-  font-weight: 400;
-  font-size: 17px;
   color: #172b4d;
-  padding: 15px 38px 0px 16px;
+  padding: 15px 38px 0 16px;
+  border-radius: 5px;
 }
 
-.get-in-touch button {
-  color: #6070FF;
-  font-weight: 500;
+.input-field-box button {
+  position: relative;
+  left: -37%;
+  color: #6070ff;
   font-size: 17px;
   background: #fff;
-  padding: 12px;
   border: 1px solid #6070ff;
   border-radius: 8px;
-  margin-top: 22px;
-  margin-left: 40px;
-  font-family: 'Poppins', sans-serif;
 }
 
-.get-in-touch:hover button {
+.input-field-box button:hover {
   color: #fff;
   background-color: #7f8cff;
 }
 
-.get-in-touch:active button {
+.input-field-box:active button {
   color: #fff;
   background-color: #3347ff;
 }
