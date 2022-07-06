@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Portfolio: mobile version
+# Portfolio: mobile version (completed)
  
-* created mobile website with sections that list my portfolio projects.
+* created mobile website with sections that list my portfolio projects and how you can join me by send me a message directly in this platform.
 
 ## Built With
 
@@ -20,6 +20,8 @@ To get a local copy up and running follow these simple example steps.
 * Open the command prompt in this directory.
 * Clone by using this command : ```git clone https://github.com/iambenkis/Portfolio.git```
 * Got to the cloned folder in your prompt command using ```cd Portfolio```
+* Run the code
+* Send a message so that we can collect your Data using [```Fornspree Service```](https://formspree.io/html)
 
 ### Prerequisites
 
