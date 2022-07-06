@@ -258,3 +258,84 @@ button:hover {
 .about .connect li {
   margin-right: 20px;
 }
+
+.contact-me {
+  background: #6070ff url(images/contact-form-bg.svg);
+  background-position-x: right;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  border-top-left-radius: 100px;
+  color: #EBEBFF;
+  padding: 24px;
+}
+
+.contact-me-text {
+  margin-top: 103px;
+  color: #EBEBFF;
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.contact-me-brief {
+  color: #EBEBFF;
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 400;
+  margin: 40px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.input-field-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 40px;
+}
+
+.input-field {
+  align-items: center;
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  height: 24px;
+  padding: 10px;
+}
+
+.write-message {
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 17px;
+  color: #172b4d;
+  padding: 15px 38px 0px 16px;
+}
+
+.get-in-touch button {
+  color: #6070FF;
+  font-weight: 500;
+  font-size: 17px;
+  background: #fff;
+  padding: 12px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  margin-top: 22px;
+  margin-left: 40px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.get-in-touch:hover button {
+  color: #fff;
+  background-color: #7f8cff;
+}
+
+.get-in-touch:active button {
+  color: #fff;
+  background-color: #3347ff;
+}
