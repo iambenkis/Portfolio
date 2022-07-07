@@ -110,6 +110,13 @@ body {
   flex-direction: column;
   justify-content: start;
 }
+ 
+.desktop{
+  display: none;
+}
+.mobile{
+  display: flex;
+}
 
 .project-img {
   width: 100%;
@@ -187,7 +194,7 @@ button:hover {
   margin: 100px 24px;
   display: grid;
   grid-template-rows: repeat(4, 2fr);
-  gap: 25px;
+  gap: 45px;
 }
 
 /* About section */
@@ -266,6 +273,7 @@ button:hover {
 
 .contact-me {
   height: 730px;
+  width: 100%;
   background-image: url("./images/contact-form.png");
   background-position: 100% 100%;
   background-size: contain;
@@ -338,7 +346,7 @@ textarea {
 
 .input-field-box button {
   position: relative;
-  left: -28%;
+  left: -24%;
   color: #6070ff;
   font-size: 17px;
   background: #fff;
@@ -359,6 +367,9 @@ textarea {
 @media (min-width: 600px) { 
   .mobile {
     display: none;
+  }
+  .desktop{
+    display: flex;
   }
   .nav-bar .fa-bars{
     display: none;
@@ -417,22 +428,21 @@ textarea {
   }
   .project:nth-child(even){
     flex-direction: row-reverse; 
-    align-items: start;
+    align-items: center;
     justify-content: center;
   }
   .project-img {
     width: 45%; 
     margin-left: 24px;
   }
-  .project-img:nth-child(even){
-    /* padding-right: 1rem; */
+  .project-img:nth-child(even){ 
     margin-left: 100px;
   }
   .projects-container {
-    margin: 100px 200px;
+    margin: 100px 150px;
     display: grid;
     grid-template-rows: repeat(4, 2fr);
-    gap: 25px;
+    gap: 55px;
     padding: 24px;
   }
   .project-txt{
@@ -441,14 +451,18 @@ textarea {
   }
 
   /* About content */
-  .about-content{
-    width: 100%;
+
+  .about{ 
+    padding: 114px 13%;
+    border-top-right-radius: 50px;
+  }
+  .about-content{ 
     display: flex;
     justify-content: space-between;
   }
   .about-text{
-    width: 40%;
-    margin-right: 4rem;
+    width: 50%;
+    margin-right: 7rem;
   } 
   .knowledge {
     width: 40%;
@@ -472,7 +486,7 @@ textarea {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
+    align-items: center;  
   }
   .contact-me p{
     width: 40%;
@@ -499,5 +513,6 @@ textarea{
 .input-field-box button {
   position: relative;
   left: 0%; 
-}
+} 
+
 }
