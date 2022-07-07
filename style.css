@@ -57,9 +57,13 @@ body {
   font-size: 16px;
 }
 
+.nav-bar .nav-list{
+  display: none;
+}
+
 .container {
   height: 100%;
-  padding: 1rem 24px;
+  padding: 1rem  24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -71,6 +75,7 @@ body {
   font-size: 40px;
   line-height: 52px;
   margin: 3rem 0 12px 0;
+  color: #091E42;
 }
 
 .container p {
@@ -267,8 +272,7 @@ button:hover {
   background-repeat: no-repeat;
   background-color: #6070ff;
   border-top-left-radius: 100px;
-  color: #ebebff;
-  padding: 24px;
+  color: #ebebff; 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -334,7 +338,7 @@ textarea {
 
 .input-field-box button {
   position: relative;
-  left: -37%;
+  left: -28%;
   color: #6070ff;
   font-size: 17px;
   background: #fff;
@@ -350,4 +354,55 @@ textarea {
 .input-field-box:active button {
   color: #fff;
   background-color: #3347ff;
+}
+
+@media (min-width: 600px) {
+  body {
+    background: green;
+  }
+  .nav-bar .fa-bars{
+    display: none;
+  }
+  .header { 
+    height: 100vh;
+    background-image: url(./images/desktop\ version\ background.png); 
+    background-position-y: 0rem; 
+    border-bottom-left-radius: 70px;
+    margin-top: 0rem;
+  }
+  .nav-bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 1rem 10% 1rem 10%;
+    background-color: #fff;
+  }
+  .header .nav-list{
+    display: flex;
+    align-items: center;
+  }
+  .nav-list li{
+    margin-right: 1.5rem;
+  }
+  .nav-list a {
+    color: #344563;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .container {
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .container .br{
+    display: none;
+  }
+  .icons {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+  }
 }
