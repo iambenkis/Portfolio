@@ -356,9 +356,9 @@ textarea {
   background-color: #3347ff;
 }
 
-@media (min-width: 600px) {
-  body {
-    background: green;
+@media (min-width: 600px) { 
+  .mobile {
+    display: none;
   }
   .nav-bar .fa-bars{
     display: none;
@@ -405,4 +405,47 @@ textarea {
     justify-content: space-between;
     width: 20%;
   }
+
+  /* portfolio  */
+  .project { 
+    box-sizing: border-box;
+    width: 100%; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0;  
+  }
+  .project:nth-child(even){
+    flex-direction: row-reverse; 
+    align-items: start;
+    justify-content: center;
+  }
+  .project-img {
+    width: 45%; 
+    margin-left: 24px;
+  }
+  .project-img:nth-child(even){
+    /* padding-right: 1rem; */
+    margin-left: 100px;
+  }
+  .projects-container {
+    margin: 100px 200px;
+    display: grid;
+    grid-template-rows: repeat(4, 2fr);
+    gap: 25px;
+    padding: 24px;
+  }
+  .project-txt{
+    width: 45%;
+    padding-top: 1rem;
+  }
+
+  /* About content */
+  .about-content{
+    display: flex;
+  }
+  .about-text{
+    width: 40%;
+  }
+  
 }
