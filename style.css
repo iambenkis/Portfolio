@@ -23,7 +23,7 @@ h2 {
 }
 
 body {
-  background-color: #e5e5e5b0;
+  background-color:  #E5E5E5;
 }
 
 .header {
@@ -442,10 +442,62 @@ textarea {
 
   /* About content */
   .about-content{
+    width: 100%;
     display: flex;
+    justify-content: space-between;
   }
   .about-text{
     width: 40%;
+    margin-right: 4rem;
+  } 
+  .knowledge {
+    width: 40%;
   }
-  
+  .langs-label ul {
+    display: flex;
+  }
+  .langs-label li {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    box-sizing: border-box;
+    width: 122px;
+  } 
+  .langs-label p { 
+    margin-left: 0rem;
+    margin-top: .5rem;
+  }
+  /* Contact me section */
+  .contact-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+  }
+  .contact-me p{
+    width: 40%;
+  }
+
+textarea,
+input { 
+  width: 440px;
+  height: 2.5rem;
+  margin-bottom: 15px;
+  padding-left: 0.7rem;
+  border: solid 1px  #cfd8dc;
+  font-size: 17px;
+  line-height: 20px;
+  border-radius: 0;
+}
+textarea{
+  height: 10rem;
+}
+.input-field,
+.write-message { 
+  border-radius: 0px; 
+}
+.input-field-box button {
+  position: relative;
+  left: 0%; 
+}
 }
