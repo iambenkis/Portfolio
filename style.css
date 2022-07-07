@@ -101,9 +101,11 @@ body {
 .icons a {
   color: #505f79;
 }
+
 .icons img {
   cursor: pointer;
 }
+
 .project {
   padding: 16px;
   background-color: #fff;
@@ -432,7 +434,7 @@ textarea {
     justify-content: space-between;
     width: 170px;
   }
- 
+
   /* portfolio  */
   .project {
     box-sizing: border-box;
