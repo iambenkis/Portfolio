@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Portfolio: mobile version (completed)
+# Portfolio: mobile Verion and Desktop Version(completed)
  
-* created mobile website with sections that list my portfolio projects and how you can join me by send me a message directly in this platform.
+* Portfolio website supported by both mobile phone and Desktop or Laptop.
 
 ## Built With
 
