@@ -123,6 +123,10 @@ body {
   display: flex;
 }
 
+:hover.project-img {
+  transform: scale(1.05);
+}
+
 .project-img {
   width: 100%;
 }
