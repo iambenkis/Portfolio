@@ -23,7 +23,7 @@ h2 {
 }
 
 body {
-  background-color: #e5e5e5b0;
+  background-color: #e5e5e5;
 }
 
 .header {
@@ -57,9 +57,13 @@ body {
   font-size: 16px;
 }
 
+.nav-bar .nav-list {
+  display: none;
+}
+
 .container {
   height: 100%;
-  padding: 1rem 24px;
+  padding: 1rem  24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -71,6 +75,7 @@ body {
   font-size: 40px;
   line-height: 52px;
   margin: 3rem 0 12px 0;
+  color: #091e42;
 }
 
 .container p {
@@ -90,11 +95,15 @@ body {
 .icons {
   display: flex;
   justify-content: space-between;
-  width: 50%;
+  width: 400px;
 }
 
 .icons a {
   color: #505f79;
+}
+
+.icons img {
+  cursor: pointer;
 }
 
 .project {
@@ -104,6 +113,14 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: start;
+}
+
+.desktop {
+  display: none;
+}
+
+.mobile {
+  display: flex;
 }
 
 .project-img {
@@ -182,7 +199,7 @@ button:hover {
   margin: 100px 24px;
   display: grid;
   grid-template-rows: repeat(4, 2fr);
-  gap: 25px;
+  gap: 45px;
 }
 
 /* About section */
@@ -261,6 +278,7 @@ button:hover {
 
 .contact-me {
   height: 730px;
+  width: 100%;
   background-image: url("./images/contact-form.png");
   background-position: 100% 100%;
   background-size: contain;
@@ -268,7 +286,6 @@ button:hover {
   background-color: #6070ff;
   border-top-left-radius: 100px;
   color: #ebebff;
-  padding: 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -334,7 +351,7 @@ textarea {
 
 .input-field-box button {
   position: relative;
-  left: -37%;
+  left: -24%;
   color: #6070ff;
   font-size: 17px;
   background: #fff;
@@ -350,4 +367,185 @@ textarea {
 .input-field-box:active button {
   color: #fff;
   background-color: #3347ff;
+}
+
+@media (min-width: 920px) {
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: flex;
+  }
+
+  .nav-bar .fa-bars {
+    display: none;
+  }
+
+  .header {
+    height: 100vh;
+    background-image: url(./images/desktop\ version\ background.png);
+    background-position-y: 0;
+    border-bottom-left-radius: 70px;
+    margin-top: 0;
+  }
+
+  .nav-bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 1rem 10% 1rem 10%;
+    background-color: #fff;
+    z-index: 10;
+  }
+
+  .header .nav-list {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-list li {
+    margin-right: 1.5rem;
+    cursor: pointer;
+  }
+
+  .nav-list li a {
+    color: #344563;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    cursor: pointer;
+  }
+
+  .container {
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .container .br {
+    display: none;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: space-between;
+    width: 170px;
+  }
+
+  /* portfolio  */
+  .project {
+    box-sizing: border-box;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0;
+  }
+
+  .project:nth-child(even) {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .project-img {
+    width: 45%;
+    margin-left: 24px;
+  }
+
+  .project-img:nth-child(even) {
+    margin-left: 100px;
+  }
+
+  .projects-container {
+    margin: 100px 150px;
+    display: grid;
+    grid-template-rows: repeat(4, 2fr);
+    gap: 55px;
+    padding: 24px;
+  }
+
+  .project-txt {
+    width: 45%;
+    padding-top: 1rem;
+  }
+
+  /* About content */
+
+  .about {
+    padding: 114px 13%;
+    border-top-right-radius: 50px;
+  }
+
+  .about-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .about-text {
+    width: 50%;
+    margin-right: 7rem;
+  }
+
+  .knowledge {
+    width: 50%;
+  }
+
+  .langs-label ul {
+    display: flex;
+  }
+
+  .langs-label li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+    width: 122px;
+  }
+
+  .langs-label p {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+
+  /* Contact me section */
+  .contact-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-me p {
+    width: 40%;
+  }
+
+  textarea,
+  input {
+    width: 440px;
+    height: 2.5rem;
+    margin-bottom: 15px;
+    padding-left: 0.7rem;
+    border: solid 1px  #cfd8dc;
+    font-size: 17px;
+    line-height: 20px;
+    border-radius: 0;
+  }
+
+  textarea {
+    height: 10rem;
+  }
+
+  .input-field,
+  .write-message {
+    border-radius: 0;
+  }
+
+  .input-field-box button {
+    position: relative;
+    left: 0%;
+  }
 }

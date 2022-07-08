@@ -19,11 +19,22 @@
         <nav class="nav-bar"> 
             <a href="#" class="logo-txt">My Logo</a> 
             <i class="fa-solid fa-bars"></i>
+            <ul class="nav-list">
+                <li>
+                    <a href="#projects-container">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
         </nav> 
         <div class="container">
             <h2>
                 I'm Benjamin <br>
-                Glad to see  <br> you!
+                Glad to see  <br class="br"> you!
             </h2>
             <p>
                 I'm as software developer! I can help you build a 
@@ -45,8 +56,105 @@
         </div>   
     </header> 
     <!-- projects section -->
-    <section class="projects-container">
-        <div class="project">
+    <section class="projects-container" id="projects-container"> 
+        <div class="desktop project">
+            <img src="./images/project5.png" class="project-img" alt="Tonic Image">
+            <div class="project-txt">
+                <h2 class="project-title">Tonic </h2>
+                <div class="caption">
+                    <p class="canopy">CANOPY</p>
+                    <img src="./images/Counter.png" alt="">
+                    <p>Back end dev</p>
+                    <img src="./images/Counter.png" alt="">
+                    <p>2015</p>
+                </div>
+                <p class="text">
+                    A daily selection of privately personalized reads;
+                    no accounts sign-ups required.
+                </p>
+                <ul class="languages">
+                    <li>Html</li>
+                    <li>Css</li>
+                    <li>JavaScript</li>
+                </ul>
+                <button>See Project</button>
+            </div>
+        </div>
+        <div class="desktop project">
+            <img src="./images/project6.png" class="project-img" alt="">
+            <div class="project-txt">
+                <h2 class="project-title">Multi - Post Stories</h2>
+                <div class="caption">
+                    <p class="canopy">FACEBOOK</p>
+                    <img src="./images/Counter.png" alt="">
+                    <p>Full stack dev</p>
+                    <img src="./images/Counter.png" alt="">
+                    <p>2015</p>
+                </div>
+                <p class="text">
+                     Experimental content creation feature that allows uses 
+                     to add an existing stary over the course of a day 
+                     without spamming their friends.
+                </p>
+                <ul class="languages">
+                    <li>Html</li>
+                    <li>Ruby on rails</li>
+                    <li>Css</li>
+                    <li>JavaScript</li>
+                </ul>
+                <button>See Project</button> 
+            </div>
+        </div>
+        <div class="desktop project">
+            <img src="./images/project1.png" class="project-img" alt="Tonic Image">
+            <div class="project-txt">
+                <h2 class="project-title">Facebook 360 </h2>
+                <div class="caption">
+                    <p class="canopy">FACEBOOK</p>
+                    <img src="./images/Counter.png" alt="">
+                    <p>Full stack dev</p>
+                    <img src="./images/Counter.png" alt="">
+                    <p>2015</p>
+                </div>
+                <p class="text">
+                    Exploring the future of media in Facebook's 
+                    First Visual Reality app, a palce to discover and enjoy 360 
+                    photos and videos on Geor VR.
+                </p>
+                <ul class="languages">
+                    <li>Html</li>
+                    <li>Ruby on rails</li>
+                    <li>Css</li>
+                    <li>JavaScript</li>
+                </ul>
+                <button>See Project</button>
+            </div>
+        </div>
+        <div class="desktop project">
+            <img src="./images/project2.png" class="project-img" alt="Multi - Post Stories">
+            <div class="project-txt">
+                <h2 class="project-title">Uber Navigation</h2>
+                <div class="caption">
+                    <p class="canopy">Uber<p>
+                    <img src="./images/Counter.png" alt="">
+                    <p>Lead Developer <p>
+                    <img src="./images/Counter.png" alt="">
+                    <p>201<p>
+                </div>
+                <p class="text">
+                    A daily selection of privately personalized reads;
+                    no accounts sign-ups required.
+                </p>
+                <ul class="languages">
+                    <li>Html</li>
+                    <li>Ruby on rails</li>
+                    <li>Css</li>
+                    <li>JavaScript</li>
+                </ul>
+                <button>See Project</button>
+            </div>
+        </div>
+        <div class="mobile project">
             <img src="./images/project1.png" class="project-img" alt="Tonic Image">
             <div class="project-txt">
                 <h2 class="project-title">Tonic </h2>
@@ -69,7 +177,7 @@
                 <button>See Project</button>
             </div>
         </div>
-        <div class="project">
+        <div class="mobile project">
             <img src="./images/project2.png" class="project-img" alt="Multi - Post Stories">
             <div class="project-txt">
                 <h2 class="project-title">Multi - Post Stories</h2>
@@ -92,7 +200,7 @@
                 <button>See Project</button>
             </div>
         </div>
-        <div class="project">
+        <div class="mobile project">
             <img src="./images/project3.png" class="project-img" alt="Tonic images">
             <div class="project-txt">
                 <h2 class="project-title">Tonic</h2>
@@ -115,7 +223,7 @@
                 <button>See Project</button>
             </div>
         </div>
-        <div class="project">
+        <div class="mobile project">
             <img src="./images/project4.png" class="project-img" alt="">
             <div class="project-txt">
                 <h2 class="project-title">Multi - Post Stories</h2>
@@ -140,44 +248,46 @@
         </div>
     </section>
     <!-- About section -->
-    <section class="about">
+    <section class="about" id="about">
         <div class="about-content">
-            <h2 class="about-title">About <br> Myself</h2>
-            <p class="text-about">
-                Hello I'm as software developer! I can help you build a 
-                product, feature or website Look through some 
-                of my work and experience! If you like what you 
-                see and have a project you need coded, don't hesitate 
-                to contact me.
-            </p>
-            <div class="connect">
-                <h2 class="connect-txt">LET'S CONNECT</h2>
-                <ul class="icons">
-                    <li class="icon">
-                        <a href="https://twitter.com/iambenkis">
-                            <img src="./images/twitter.png" alt="">
-                        </a>
-                    </li>
-                    <li class="icon">
-                        <a href=""><img src="./images/Linkedin-icon.png" alt=""></a></li>
-                    <li class="icon">
-                        <a href="https://github.com/iambenkis">
-                            <img src="./images/github.png" alt="">
-                        </a>
-                    </li>
-                    <li class="icon">
-                        <a href="https://angel.co/">
-                            <img src="./images/angellist.png" alt="">
-                        </a>
-                    </li>
-                    <li class="icon">
-                        <a href="https://medium.com/@benkisenge03">
-                            <img src="./images/medium.png" alt="">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <button>Get my resume</button>
+            <div class="about-text">
+                <h2 class="about-title">About <br> Myself</h2>
+                <p class="text-about">
+                    Hello I'm as software developer! I can help you build a 
+                    product, feature or website Look through some 
+                    of my work and experience! If you like what you 
+                    see and have a project you need coded, don't hesitate 
+                    to contact me.
+                </p>
+                <div class="connect">
+                    <h2 class="connect-txt">LET'S CONNECT</h2>
+                    <ul class="icons">
+                        <li class="icon">
+                            <a href="https://twitter.com/iambenkis">
+                                <img src="./images/twitter.png" alt="">
+                            </a>
+                        </li>
+                        <li class="icon">
+                            <a href=""><img src="./images/Linkedin-icon.png" alt=""></a></li>
+                        <li class="icon">
+                            <a href="https://github.com/iambenkis">
+                                <img src="./images/github.png" alt="">
+                            </a>
+                        </li>
+                        <li class="icon">
+                            <a href="https://angel.co/">
+                                <img src="./images/angellist.png" alt="">
+                            </a>
+                        </li>
+                        <li class="icon">
+                            <a href="https://medium.com/@benkisenge03">
+                                <img src="./images/medium.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <button>Get my resume</button>
+            </div> 
             <ul class="knowledge">
                 <li class="scrolled resume">
                     <div class="knowledge-label scrolled">
@@ -216,7 +326,7 @@
             </ul>
         </div>
     </section> 
-    <section class="contact-me">
+    <section class="contact-me" id="contact">
             <h1 class="contact-me-text">Contact me</h1>
             <p class="contact-me-brief">
                 If you have an application you are intrested in developing, a feature that
@@ -227,15 +337,16 @@
                 action="https://formspree.io/f/xeqnbaww"
                 method="POST">
                 <div class="input-field-box">
-                    <input class="input-field" type="text" name="name" maxlength="30" value="Type your name">
-                    <input class="input-field" type="email" name="email" value="Username@domain.ext">
+                    <input class="input-field" type="text" name="name" maxlength="30" placeholder="Type your name" required>
+                    <input class="input-field" type="email" name="email" placeholder="Username@domain.ext" required>
                     <textarea 
                         class="write-message" 
                         name="write message" 
                         placeholder="Write your message here"
                         maxlength="100" 
                         rows="5" 
-                        cols="30">
+                        cols="30"
+                        required>
                     </textarea> 
                     <button type="submit">Get in Touch</button>    
                 </div>
