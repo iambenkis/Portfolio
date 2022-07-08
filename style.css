@@ -169,6 +169,10 @@ body {
   height: 8px;
 }
 
+:hover .languages li {
+  transform: rotate(180deg);
+}
+
 .languages {
   display: flex;
   margin: 1rem auto;
@@ -183,7 +187,10 @@ body {
   line-height: 16px;
   border-radius: 8px;
   margin-right: 0.5rem;
+  transition: width 2s, height 2s, #fff 2s, transform 2s;
 }
+
+
 
 button {
   border: 1px solid #6070ff;
