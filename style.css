@@ -38,7 +38,7 @@ body {
 }
 
 .nav-bar {
-  position: absolute;
+  position: fixed;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -95,7 +95,7 @@ body {
 .icons {
   display: flex;
   justify-content: space-between;
-  width: 400px;
+  width: 50%;
 }
 
 .icons a {

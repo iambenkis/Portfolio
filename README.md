@@ -42,7 +42,11 @@ Get Figma design ![here](https://www.figma.com/files/recent?fuid=109030496975623
 
 * Visit the github repository and clone ![here](https://github.com/iambenkis/Portfolio.git)
 * Start  editing using your local development environment
- 
+
+## Benjamin Kisenge Portfolio
+
+* [Live demo](https://iambenkis.github.io/Portfolio/)
+
 ## Authors
 
 👤  **Benjamin Kisenge**
