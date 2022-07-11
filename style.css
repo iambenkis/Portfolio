@@ -95,7 +95,7 @@ body {
 .icons {
   display: flex;
   justify-content: space-between;
-  width: 400px;
+  width: 50%;
 }
 
 .icons a {
@@ -415,6 +415,9 @@ textarea {
     font-size: 15px;
     line-height: 20px;
     cursor: pointer;
+  }
+  .icons { 
+    width: 400px;
   }
 
   .container {
