@@ -47,6 +47,14 @@ body {
   color: #6070ff;
 }
 
+.nav-bar .fa-bars {
+  transition: transform 0.5s;
+}
+
+.nav-bar .fa-bars:hover {
+  transform: rotate(360deg);
+}
+
 .nav-bar a {
   font-weight: 700;
   font-size: 18px;
@@ -127,6 +135,10 @@ body {
   width: 100%;
 }
 
+:hover.project-img {
+  transform: scale(1.05);
+}
+
 .project-title {
   font-size: 32px;
   line-height: 44px;
@@ -179,6 +191,7 @@ body {
   line-height: 16px;
   border-radius: 8px;
   margin-right: 0.5rem;
+  transition: width 2s, height 2s, #fff 2s, transform 2s;
 }
 
 button {
@@ -201,6 +214,7 @@ button:hover {
   grid-template-rows: repeat(4, 2fr);
   gap: 45px;
 }
+
 
 /* About section */
 .about {
@@ -263,6 +277,10 @@ button:hover {
   padding: 0.7rem;
   margin: 1rem 0.2rem;
   border-radius: 8px;
+}
+
+:hover .languages li {
+  transform: rotate(180deg);
 }
 
 .langs-label p {
