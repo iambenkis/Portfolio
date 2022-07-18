@@ -418,7 +418,25 @@ textarea {
   color: #fff;
   background-color: #3347ff;
 }
+/* Pop up section */
+.poped-section {
+  position: fixed;
+  left: 0;
+  top: 0; 
+  background-color: #c1c7d0a2;
+  z-index: 1000;
+  height: 100vh;
+  overflow: scroll;
+}
 
+.pops-project {
+  margin: 16px;
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 16px; 
+  height: 100vh; 
+}
+/* End of pop up section */
 @media (min-width: 920px) {
   .mobile {
     display: none;
