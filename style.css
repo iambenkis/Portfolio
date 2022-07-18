@@ -59,6 +59,7 @@ body {
 
 .nav-bar i {
   font-size: 16px;
+  cursor: pointer;
 }
 
 .nav-bar .nav-list {
@@ -75,7 +76,7 @@ body {
   backdrop-filter: blur(6px);
   padding-top: 30px;
   display: none;
-  background-color: #2035f396;
+  background-color: #2035f3e8;
   z-index: 100;
 }
 
@@ -88,6 +89,7 @@ body {
   float: right;
   margin-right: 30px;
   color: #fff;
+  cursor: pointer;
 }
 
 .menu ul {
@@ -127,6 +129,7 @@ body {
   line-height: 44px;
   color: #fff;
   z-index: 100;
+  cursor: pointer;
 }
 
 .container {
