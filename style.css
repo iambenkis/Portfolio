@@ -408,7 +408,7 @@ textarea {
 
 .input-field-box button:hover {
   color: #fff;
-  background-color: #7f8cff;
+  background-color: blue;
 }
 
 .input-field-box:active button {
