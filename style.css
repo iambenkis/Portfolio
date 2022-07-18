@@ -74,6 +74,9 @@ body {
   padding-top: 30px;
   display: none;
 }
+.active-menu {
+  display: block;
+}
 
 .menu i {
   font-size: 22px;
@@ -418,12 +421,12 @@ textarea {
     height: 100vh;
     background-image: url(./images/desktop\ version\ background.png);
     background-position-y: 0;
-    border-bottom-left-radius: 70px;
-    margin-top: 0;
+    border-bottom-left-radius: 100px;
+    margin-top: 0; 
   }
 
   .nav-bar {
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     padding: 1rem 10% 1rem 10%;
@@ -454,7 +457,7 @@ textarea {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); 
   }
 
   .container .br {
