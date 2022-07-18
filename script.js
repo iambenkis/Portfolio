@@ -1,0 +1,1 @@
+let faBars = document.querySelector('.fa-bars')
