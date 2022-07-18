@@ -23,8 +23,7 @@ h2 {
 }
 
 body {
-  background-color: #e5e5e5;
-  position: relative;
+  background-color: #e5e5e5; 
 }
 
 .header {
@@ -32,7 +31,7 @@ body {
   background-image: url(./images/shapes.png);
   background-position: 100% 100%;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size:cover;
   background-position-y: 3rem;
   background-color: #fff;
   border-bottom-left-radius: 50px;   
@@ -73,6 +72,8 @@ body {
   backdrop-filter: blur(6px);
   padding-top: 30px;
   display: none;
+  background-color:  #6070ffab;
+  z-index: 100;
 }
 .active-menu {
   display: block;
@@ -457,7 +458,7 @@ textarea {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);  
   }
 
   .container .br {
