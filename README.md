@@ -2,12 +2,13 @@
 
 # Portfolio: mobile Verion and Desktop Version(completed)
  
-* Portfolio website supported by both mobile phone and Desktop or Laptop.
+* Portfolio website supported by both mobile phone and Desktop or Laptop using responsive ```JavaScript```
 
 ## Built With
 
 * HTML
 * CSS
+* Javascript 
  
 ## Getting Started
 
@@ -25,7 +26,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-Figma HTML CSS
+Figma HTML CSS JavaScript
 
 ### Setup
 
