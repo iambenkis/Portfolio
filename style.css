@@ -72,7 +72,8 @@ body {
   backdrop-filter: blur(6px);
   padding-top: 30px;
   display: none;
-  background-color:  #6070ffab;
+  background-color:  #6070ff;
+  mix-blend-mode: multiply;
   z-index: 100;
 }
 .active-menu {
@@ -96,6 +97,14 @@ body {
 .menu a{
   color: rgb(0, 106, 138);
   font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  color: #fff;
 }
 .container {
   height: 100%;
