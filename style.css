@@ -80,10 +80,6 @@ body {
   z-index: 100;
 }
 
-.active-menu {
-  display: block;
-}
-
 .menu i {
   font-size: 22px;
   float: right;
@@ -96,6 +92,90 @@ body {
   margin: 4rem 0 0 28px;
 }
 
+/* Pop up section */
+.poped-section {
+  position: fixed;
+  left: 0;
+  top: 0; 
+  background-color: #c1c7d0c7;
+  width: 100%;
+  height: 100vh; 
+  backdrop-filter: blur(3px);
+  display: none;
+  z-index: 100000;
+}
+
+.active-menu {
+  display: block;
+}
+.project-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  overflow: scroll; 
+  background-color: #fff;
+  z-index: 2001;
+  width: 90%;
+  height: 95%; 
+  
+}
+
+.poped-section .fa-xmark {
+  position: fixed;
+  left: 85%;
+  top: 5%;
+  z-index: 10000;
+  font-size: 24px;
+  color: #67798E;
+}
+
+.pops-project {
+  padding: 24px;
+  border-radius: 16px;  
+}
+
+.pops-project img {
+  margin-top: .5rem;
+}
+
+.pops-project .text{
+  margin-top: .7rem;
+}
+
+.pops-project .btns{
+  display: flex;
+  justify-content: space-between;
+}
+
+#tempate-image{
+  width: 100%;
+}
+
+#caption{
+  display: flex;
+  align-items: center; 
+}
+#caption img{
+  margin-bottom: .7rem;
+}
+.btns i {
+  font-size: 1.3rem;
+  margin-left: .3rem;
+}
+.btns button{
+  display: flex; 
+  width: 8.5rem;
+  padding: 0.3;
+  align-items: center; 
+  justify-content: center;
+}
+.btns img{
+  margin-left: .5rem;
+  margin-bottom: .5rem;
+}
+/* End of pop up section */
+
 .languages li {
   padding: 0.2rem 0.5rem;
   background-color: #ebebff;
@@ -104,7 +184,7 @@ body {
   font-size: 12px;
   line-height: 16px;
   border-radius: 8px;
-  margin-right: 0.5rem;
+  margin-right: 0.5rem; 
 }
 
 .langs-label li {
@@ -114,7 +194,7 @@ body {
   background-color: #f7f7f9;
   padding: 0.7rem;
   margin: 1rem 0.2rem;
-  border-radius: 8px;
+  border-radius: 8px; 
 }
 
 .menu ul li {
@@ -418,25 +498,7 @@ textarea {
   color: #fff;
   background-color: #3347ff;
 }
-/* Pop up section */
-.poped-section {
-  position: fixed;
-  left: 0;
-  top: 0; 
-  background-color: #c1c7d0a2;
-  z-index: 1000;
-  height: 100vh;
-  overflow: scroll;
-}
 
-.pops-project {
-  margin: 16px;
-  padding: 16px;
-  background-color: #fff;
-  border-radius: 16px; 
-  height: 100vh; 
-}
-/* End of pop up section */
 @media (min-width: 920px) {
   .mobile {
     display: none;
@@ -564,6 +626,7 @@ textarea {
 
   .langs-label ul {
     display: flex;
+    z-index: -899;
   }
 
   .langs-label li {
