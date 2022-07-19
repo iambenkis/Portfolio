@@ -3,13 +3,9 @@ const projects = [
         title : "Tonic",
         languages : ['Html','Css','Javascipt'],
         image: './images/project1.png',
-        description : `    Lorem ipsum dolor sit amet, consectetur adipisicing 
-        elit. Similique quasi quisquam tempore provident labore. Excepturi 
-        sed optio velit voluptas? Recusandae maiores 
-        natus vitae qui tempora minus dolores iste 
-        nihil assumenda sapiente doloribus, a sequi 
-        alias? Neque odit autem distinctio laboriosam,
-         a veritatis placeat enim modi ratione omnis dolores. `,
+        description : `A daily selection of privately personalized reads;
+        no accounts sign-ups required. Recusandae maiores 
+        natus `,
         year : 2015 ,
         job : 'BAck end Dev',
         company: 'CANOPY'
@@ -18,18 +14,8 @@ const projects = [
         title : "Multi - Post Stories",
         languages : ['Html','Css','Javascipt'],
         image: './images/project2.png',
-        description : `    Lorem ipsum dolor sit amet, consectetur adipisicing 
-        elit. Similique quasi atque harum, optio ex 
-        tempore ullam officiis? Obcaecati dolor 
-        placeat, laboriosam assumenda aliquid dicta 
-        esse sequi tempore. Ratione repudiandae non 
-        nostrum ab explicabo labore. Hic neque 
-        quisquam tempore provident labore. Excepturi 
-        sed optio velit voluptas? Recusandae maiores 
-        natus vitae qui tempora minus dolores iste 
-        nihil assumenda sapiente doloribus, a sequi 
-        alias? Neque odit autem distinctio laboriosam,
-         a veritatis placeat enim modi ratione omnis dolores. `,
+        description : `     A daily selection of privately personalized reads;
+        no accounts sign-ups required. Lorem ipsum dolor sit amet.`,
         year : 2018 ,
         job : 'Full Stack Dev',
         company: 'FACEBOOK'
@@ -38,13 +24,8 @@ const projects = [
         title : "Facebook 360",
         languages : ['Html','Css','Javascipt'],
         image: './images/project3.png',
-        description : `    Lorem ipsum dolor sit amet, consectetur adipisicing 
-        elit. Similique quasi atque harum, optio ex 
-        tempore ullam officiis? Obcaecati dolor 
-        placeat, laboriosam assumenda aliquid dicta 
-        esse sequi tempore. Ratione repudiandae non 
-        nostrum ab explicabo labore. Hic neque 
-        quisquam tempore provident labore.`,
+        description : `  A daily selection of privately personalized reads;
+        no accounts sign-ups required.`,
         year : 2020 ,
         job : 'Full Stack Dev',
         company: 'FACEBOOK'
@@ -53,14 +34,8 @@ const projects = [
         title : "Uber Navigation",
         languages : ['Html','Css','Javascipt'],
         image: './images/project4.png',
-        description : `    Lorem ipsum dolor sit amet, consectetur adipisicing 
-        elit. Similique quasi atque harum, optio ex 
-        tempore ullam officiis? Obcaecati dolor 
-        placeat, laboriosam assumenda aliquid dicta 
-        esse sequi tempore. Ratione repudiandae non 
-        nostrum ab explicabo labore. Hic neque 
-        quisquam tempore provident labore. Excepturi 
-        sed optio velit voluptas?`,
+        description : `   A daily selection of privately personalized reads;
+        no accounts sign-ups required.`,
          year : 2022,
          job : 'Lead Developer',
          company: 'Uber'
