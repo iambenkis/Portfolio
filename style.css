@@ -500,11 +500,11 @@ textarea {
 }
 
 @media (min-width: 920px) {
-  .mobile {
-    display: none;
-  }
+  /* .mobile {
+    display: flex;
+  } */
 
-  .desktop {
+  .mobile {
     display: flex;
   }
 
