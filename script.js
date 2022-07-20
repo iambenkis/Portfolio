@@ -1,6 +1,6 @@
 const projects = [
     {
-        title : "Tonic <br>",
+        title : "Tonic <br> Tonic",
         languages : ['Html','Css','Javascipt'],
         image: './images/project1.png',
         description : `A daily selection of privately personalized reads;
@@ -16,7 +16,8 @@ const projects = [
         languages : ['Html','Css','Javascipt'],
         image: './images/project2.png',
         description : `     A daily selection of privately personalized reads;
-        no accounts sign-ups required. Lorem ipsum dolor sit amet.`,
+        no accounts sign-ups required. Lorem ipsum dolor sit amet.A daily selection of privately personalized reads;
+        no accounts sign-ups required.`,
         year : 2018 ,
         job : 'Full Stack Dev',
         company: 'FACEBOOK'
@@ -26,6 +27,7 @@ const projects = [
         languages : ['Html','Css','Javascipt'],
         image: './images/project3.png',
         description : `  A daily selection of privately personalized reads;
+        no accounts sign-ups required.A daily selection of privately personalized reads;
         no accounts sign-ups required.`,
         year : 2020 ,
         job : 'Full Stack Dev',
@@ -36,6 +38,7 @@ const projects = [
         languages : ['Html','Css','Javascipt'],
         image: './images/project4.png',
         description : `   A daily selection of privately personalized reads;
+        no accounts sign-ups required.A daily selection of privately personalized reads;
         no accounts sign-ups required.`,
          year : 2022,
          job : 'Lead Developer',
@@ -91,7 +94,7 @@ seeProject.forEach((project,index) => project.addEventListener('click', (e) => {
         <p class="text">${projects[index].description}</p>
         ${projects[index].languages ? printLang (projects[index].languages):''}
         <div class="btns">
-            <button>
+            <button> 
                 See Live
                 <img src="./images/Icon.png" alt="live icon">
             </button> 

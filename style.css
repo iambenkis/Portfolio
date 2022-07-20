@@ -591,8 +591,11 @@ body::-webkit-scrollbar {
       width: 100%;
       height: 100vh; 
       overflow-y: scroll;  
+      background-color: #091e423a;
   }
- 
+ .ctn {
+   background-color: #fff;
+ }
   .active-menu {
     display: block;
   }
@@ -601,8 +604,7 @@ body::-webkit-scrollbar {
     height: 100%;
     width: 100%; 
     border-radius: 0;
-    background-color: #091e423a; 
-    padding-bottom: 10rem;
+    background-color: #091e423a;  
   }
  
   .disabledApp {
@@ -611,15 +613,12 @@ body::-webkit-scrollbar {
     overflow: none;
 }
   
-  .pops-project {
-    position: absolute;
-    left: 50%;
-    top: 50%; 
-    transform: translate(-50%,-50%);  
-    width: 60%; 
+  .pops-project { 
+    width: 70%; 
+    overflow-y: scroll;
     margin-top: 9%;  
     padding: 24px;
-    margin-bottom: 100%;
+    padding-bottom: 5rem;
     border-radius: 16px;  
     background: rgb(255, 255, 255); 
   }
@@ -643,21 +642,25 @@ body::-webkit-scrollbar {
  
   .pops-project .languages {
     width: 22%;
-      position: absolute; 
-      top: 81%;
-      left: 70%;
-      border-bottom: 1px solid #EBECF0;
-      padding-bottom: 1rem;
+    position: absolute; 
+    top: 81%;
+    left: 70%;
+    border-bottom: 1px solid #EBECF0;
+    padding-bottom: 1rem;
   } 
   
   .pops-project .btns{
+    position: absolute; 
+    top: 91%;
+    left: 69%;
+    width: 25%;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-around;
   }
   #pop-xmark {
     position: fixed;
-    left: 76%;
-    top: 10%;  
+    left: 81.9%;
+    top: 12%;  
     font-size: 24px;
     color: #67798E;
   }
@@ -673,6 +676,7 @@ body::-webkit-scrollbar {
   #caption img{
     margin-bottom: .7rem;
   }
+   
   .btns i {
     font-size: 1rem;
     margin-left: .3rem;
