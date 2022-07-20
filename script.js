@@ -1,9 +1,10 @@
 const projects = [
     {
-        title : "Tonic",
+        title : "Tonic <br>",
         languages : ['Html','Css','Javascipt'],
         image: './images/project1.png',
         description : `A daily selection of privately personalized reads;
+        no accounts sign-ups required. Recusandae maiores A daily selection of privately personalized reads;
         no accounts sign-ups required. Recusandae maiores 
         natus `,
         year : 2015 ,
@@ -11,7 +12,7 @@ const projects = [
         company: 'CANOPY'
     },
     {
-        title : "Multi - Post Stories",
+        title : "Multi - Post<br>Stories",
         languages : ['Html','Css','Javascipt'],
         image: './images/project2.png',
         description : `     A daily selection of privately personalized reads;
@@ -21,7 +22,7 @@ const projects = [
         company: 'FACEBOOK'
     },
     {
-        title : "Facebook 360",
+        title : "Facebook <br>360",
         languages : ['Html','Css','Javascipt'],
         image: './images/project3.png',
         description : `  A daily selection of privately personalized reads;
@@ -31,7 +32,7 @@ const projects = [
         company: 'FACEBOOK'
     },
     {
-        title : "Uber Navigation",
+        title : "Uber <br>Navigation",
         languages : ['Html','Css','Javascipt'],
         image: './images/project4.png',
         description : `   A daily selection of privately personalized reads;
@@ -49,6 +50,7 @@ const popApp = document.querySelector('.poped-section');
 const projectContent = document.querySelector('.pops-project')
 const popXmark = document.querySelector('#pop-xmark');
 const seeProject =document.querySelectorAll('.see-prop');
+const app = document.querySelector('.section-container')
 
 const displayItem = () => {
   menu.classList.add('active-menu');
@@ -61,13 +63,20 @@ const disableProject = () => {
     popApp.classList.remove('active-menu');
 }
 
+const printLang = (langs) => {
+  return  `<ul class="languages">
+           ${langs.map(function(lang){
+               return `<li>${lang}<li/>`
+           }).join('')}
+    </ul>`
+}
+
 faBars.addEventListener('click', displayItem);
 faXmark.addEventListener('click', disableItem);
 popXmark.addEventListener('click', disableProject)
 menuItem.forEach((item) => item.addEventListener('click', disableItem));
 seeProject.forEach((project,index) => project.addEventListener('click', (e) => {
-    e.preventDefault();
-    console.log(index )
+    e.preventDefault(); 
     popApp.classList.add('active-menu');
     projectContent.innerHTML = `
         <h2 class="project-title">${projects[index].title}</h2>
@@ -80,9 +89,7 @@ seeProject.forEach((project,index) => project.addEventListener('click', (e) => {
         </div>
         <img id="tempate-image" src="${projects[index].image}" alt="Multi - Post Stories">
         <p class="text">${projects[index].description}</p>
-        <ul class="languages">
-            ${projects[index].languages.map((lang) => {return `<li>${lang}<li/>`}).join('')}
-        </ul>
+        ${projects[index].languages ? printLang (projects[index].languages):''}
         <div class="btns">
             <button>
                 See Live
