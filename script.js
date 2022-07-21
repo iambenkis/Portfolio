@@ -1,6 +1,6 @@
 const projects = [
     {
-        title : "Tonic <br> Tonic",
+        title : "Tonic Tonic",
         languages : ['Html','Css','Javascipt'],
         image: './images/project1.png',
         description : `A daily selection of privately personalized reads;
@@ -12,7 +12,7 @@ const projects = [
         company: 'CANOPY'
     },
     {
-        title : "Multi - Post<br>Stories",
+        title : "Multi - Post Stories",
         languages : ['Html','Css','Javascipt'],
         image: './images/project2.png',
         description : `     A daily selection of privately personalized reads;
@@ -23,7 +23,7 @@ const projects = [
         company: 'FACEBOOK'
     },
     {
-        title : "Facebook <br>360",
+        title : "Facebook 360",
         languages : ['Html','Css','Javascipt'],
         image: './images/project3.png',
         description : `  A daily selection of privately personalized reads;
@@ -34,7 +34,7 @@ const projects = [
         company: 'FACEBOOK'
     },
     {
-        title : "Uber <br>Navigation",
+        title : "Uber Navigation",
         languages : ['Html','Css','Javascipt'],
         image: './images/project4.png',
         description : `   A daily selection of privately personalized reads;
