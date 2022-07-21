@@ -850,9 +850,9 @@ textarea {
     border-radius: 0 0 5px 5px;
     box-sizing: border-box;
     position: absolute;
-    top: 88%;
-    left: 50%; 
+    top: 81%;
+    left: 43%; 
     border-radius: 2px;
-    font-size: .9rem;
+    font-size: 1rem;
   }
 }
