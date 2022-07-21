@@ -843,4 +843,16 @@ textarea {
     position: relative;
     left: 0%;
   }
+  .error { 
+    padding: 0;
+    font-size: 80%;
+    color: rgb(219, 0, 0); 
+    border-radius: 0 0 5px 5px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 88%;
+    left: 50%; 
+    border-radius: 2px;
+    font-size: .9rem;
+  }
 }
