@@ -255,8 +255,19 @@
                     action="https://formspree.io/f/xeqnbaww"
                     method="POST">
                     <div class="input-field-box">
-                        <input class="input-field" type="text" name="name" maxlength="30" placeholder="Type your name" required>
-                        <input class="input-field" type="email" name="email" placeholder="Username@domain.ext" required>
+                        <input 
+                            class="input-field" 
+                            type="text" name="name" 
+                            maxlength="30" 
+                            placeholder="Type your name" 
+                            required>
+                        <input 
+                            class="input-field" 
+                            type="email" 
+                            name="email" 
+                            id="email"
+                            placeholder="username@domain.ext" 
+                            required>
                         <textarea 
                             class="write-message" 
                             name="write message" 
@@ -266,7 +277,8 @@
                             cols="30"
                             required>
                         </textarea> 
-                        <button type="submit">Get in Touch</button>    
+                        <span class="error" aria-live="polite"></span> 
+                        <button type="submit">Get in Touch</button>   
                     </div>
                 </form>
         </section> 

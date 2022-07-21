@@ -53,6 +53,9 @@ const popApp = document.querySelector('.poped-section');
 const projectContent = document.querySelector('.pops-project');
 const popXmark = document.querySelector('#pop-xmark');
 const seeProject = document.querySelectorAll('.see-prop');
+const emailContact = document.querySelector('#email');
+const form  = document.getElementsByTagName('form')[0];
+const emailError = document.querySelector('.error');
 
 const displayItem = () => {
   menu.classList.add('active-menu');
@@ -100,3 +103,28 @@ seeProject.forEach((project, index) => project.addEventListener('click', (e) => 
         </div>
     `;
 }));
+
+ 
+const isLowerCase = (str) => {
+  let regExp = /[A-Z]/;
+  let isMatch = regExp.test(str)
+  if(str === '') return false;
+  let result = isMatch ?false:true;
+  return result ;
+  } 
+
+  form.addEventListener('submit', function (e) {
+      let emailCnt = emailContact.value;
+      console.log(emailCnt)
+      let isEmailValid = isLowerCase(emailCnt);  
+      if (isEmailValid) {
+          alert('hello');
+          emailError.textContent = ""
+      } else {
+          alert('No hello');
+          emailError.textContent = "Kindly Check Your Email"
+      }
+      // prevent the form from submitting
+      e.preventDefault();
+  
+  });

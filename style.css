@@ -436,6 +436,28 @@ button:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
+}
+
+.error { 
+  padding: 0;
+  font-size: 80%;
+  color: rgb(219, 0, 0); 
+  border-radius: 0 0 5px 5px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 88%;
+  left: 50%; 
+  border-radius: 2px;
+  font-size: .9rem;
+}
+
+.error.active {
+  padding: 0.3em;
+}
+
+.error.active {
+  padding: 0.3em;
 }
 
 .contact-me-text {

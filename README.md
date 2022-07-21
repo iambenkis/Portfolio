@@ -24,8 +24,7 @@ To get a local copy up and running follow these simple example steps.
 * Run the code
 * Send a message so that we can collect your Data using [```Fornspree Service```](https://formspree.io/html)
 
-### Prerequisites
-
+### Prerequisites  
 Figma HTML CSS JavaScript
 
 ### Setup
