@@ -439,21 +439,15 @@ button:hover {
   position: relative;
 }
 
-.error { 
+.error {
   padding: 0;
-  font-size: 80%;
-  color: rgb(219, 0, 0); 
+  color: rgb(219, 0, 0);
   border-radius: 0 0 5px 5px;
   box-sizing: border-box;
   position: absolute;
   top: 88%;
-  left: 50%; 
-  border-radius: 2px;
-  font-size: .9rem;
-}
-
-.error.active {
-  padding: 0.3em;
+  left: 50%;
+  font-size: 0.9rem;
 }
 
 .error.active {
@@ -843,16 +837,15 @@ textarea {
     position: relative;
     left: 0%;
   }
-  .error { 
+
+  .error {
     padding: 0;
-    font-size: 80%;
-    color: rgb(219, 0, 0); 
+    color: rgb(219, 0, 0);
     border-radius: 0 0 5px 5px;
     box-sizing: border-box;
     position: absolute;
     top: 81%;
-    left: 43%; 
-    border-radius: 2px;
+    left: 43%;
     font-size: 1rem;
   }
 }

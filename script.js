@@ -54,8 +54,8 @@ const projectContent = document.querySelector('.pops-project');
 const popXmark = document.querySelector('#pop-xmark');
 const seeProject = document.querySelectorAll('.see-prop');
 const emailContact = document.querySelector('#email');
-const form  = document.getElementsByTagName('form')[0];
-const emailError = document.querySelector('.error'); 
+const form = document.getElementsByTagName('form')[0];
+const emailError = document.querySelector('.error');
 
 const displayItem = () => {
   menu.classList.add('active-menu');
@@ -105,21 +105,21 @@ seeProject.forEach((project, index) => project.addEventListener('click', (e) => 
 }));
 
 const isLowerCase = (str) => {
-  let regExp = /[A-Z]/;
-  let isMatch = regExp.test(str)
-  if(str === '') return false;
-  let result = isMatch ?false:true;
-  return result ;
-  } 
+  const regExp = /[A-Z]/;
+  const isMatch = regExp.test(str);
+  if (str === '') return false;
+  const result = !isMatch;
+  return result;
+};
 
-  form.addEventListener('submit', function (e) {
-      let emailCnt = emailContact.value; 
-      let isEmailValid = isLowerCase(emailCnt);  
-      if (isEmailValid) { 
-          emailError.textContent = "";
-      } else { 
-          emailError.textContent = "Kindly Check Your Email";
-          e.preventDefault();
-      }
-      // prevent the form from submitting
-  });
+form.addEventListener('submit', (e) => {
+  const emailCnt = emailContact.value;
+  const isEmailValid = isLowerCase(emailCnt);
+  if (isEmailValid) {
+    emailError.textContent = '';
+  } else {
+    emailError.textContent = 'Kindly Check Your Email';
+    e.preventDefault();
+  }
+  // prevent the form from submitting
+});
