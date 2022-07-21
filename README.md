@@ -2,7 +2,7 @@
 
 # Portfolio: mobile Verion and Desktop Version(completed)
  
-* Portfolio website supported by both mobile phone and Desktop or Laptop using responsive ```JavaScript```
+* Portfolio website supported by both mobile phone and Desktop or Laptop using responsive ```JavaScript```.
 
 ## Built With
 

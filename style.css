@@ -59,6 +59,7 @@ body {
 
 .nav-bar i {
   font-size: 16px;
+  cursor: pointer;
 }
 
 .nav-bar .nav-list {
@@ -75,12 +76,8 @@ body {
   backdrop-filter: blur(6px);
   padding-top: 30px;
   display: none;
-  background-color: #2035f396;
+  background-color: #2035f3e8;
   z-index: 100;
-}
-
-.active-menu {
-  display: block;
 }
 
 .menu i {
@@ -88,11 +85,128 @@ body {
   float: right;
   margin-right: 30px;
   color: #fff;
+  cursor: pointer;
 }
 
 .menu ul {
   margin: 4rem 0 0 28px;
 }
+
+/* Pop up section */
+.poped-section {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #c1c7d0c7;
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: blur(5px);
+  display: none;
+  z-index: 100000;
+  overflow-y: scroll;
+}
+
+.active-menu {
+  display: block;
+}
+
+.project-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow-y: scroll;
+  background-color: #fff;
+  z-index: 2001;
+  width: 90%;
+  height: 95%;
+  border-radius: 15px;
+}
+
+#pop-xmark {
+  position: fixed;
+  left: 85%;
+  top: 7%;
+  z-index: 10000;
+  font-size: 24px;
+  color: #67798e;
+}
+
+.pops-project {
+  width: 95%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 16px;
+  background-color: #fff;
+}
+
+.pops-project img {
+  margin-top: 0.5rem;
+}
+
+.pops-project .text {
+  margin-bottom: -0.4rem;
+}
+
+.pops-project .btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+#tempate-image {
+  width: 100%;
+}
+
+#caption {
+  display: flex;
+  align-items: center;
+}
+
+.btns img {
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.icons img {
+  cursor: pointer;
+}
+
+.caption img {
+  margin-right: 0.5rem;
+  width: 8px;
+  height: 8px;
+}
+
+#caption img {
+  margin-bottom: 0.7rem;
+}
+
+.btns i {
+  font-size: 1.3rem;
+  margin-left: 0.3rem;
+}
+
+button {
+  border: 1px solid #6070ff;
+  color: #396df2;
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: 0.5s;
+}
+
+.btns button {
+  display: flex;
+  width: 8.5rem;
+  padding: 0.3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+/* End of pop up section */
 
 .languages li {
   padding: 0.2rem 0.5rem;
@@ -121,12 +235,17 @@ body {
   line-height: 44px;
 }
 
+.pops-project li:nth-child(even) {
+  display: none;
+}
+
 .menu a {
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
   color: #fff;
   z-index: 100;
+  cursor: pointer;
 }
 
 .container {
@@ -168,10 +287,6 @@ body {
 
 .icons a {
   color: #505f79;
-}
-
-.icons img {
-  cursor: pointer;
 }
 
 .project {
@@ -227,24 +342,9 @@ body {
   color: #c1c7d0;
 }
 
-.caption img {
-  margin-right: 0.5rem;
-  width: 8px;
-  height: 8px;
-}
-
 .languages {
   display: flex;
   margin: 1rem auto;
-}
-
-button {
-  border: 1px solid #6070ff;
-  color: #396df2;
-  background-color: #fff;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  transition: 0.5s;
 }
 
 button:hover {
@@ -417,11 +517,21 @@ textarea {
 }
 
 @media (min-width: 920px) {
-  .mobile {
-    display: none;
+  /* .mobile {
+    display: flex;
+  } */
+
+  body {
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll;
   }
 
-  .desktop {
+  body::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
+
+  .mobile {
     display: flex;
   }
 
@@ -482,6 +592,116 @@ textarea {
     width: 170px;
   }
 
+  /* start of pop up  */
+  .poped-section {
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    background-color: #091e423a;
+  }
+
+  .ctn {
+    background-color: #fff;
+  }
+
+  .active-menu {
+    display: block;
+  }
+
+  .project-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+    background-color: #091e423a;
+  }
+
+  .pops-project {
+    width: 70%;
+    margin-top: 5%;
+    padding: 24px;
+    padding-bottom: 5rem;
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll;
+  }
+
+  .pops-project::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
+
+  .pops-project img {
+    margin-top: 0.5rem;
+  }
+
+  .pops-project .text {
+    margin-bottom: -0.4rem;
+    width: 70%;
+  }
+
+  .pops-project .languages {
+    width: 22%;
+    position: absolute;
+    top: 81%;
+    left: 70%;
+    border-bottom: 1px solid #ebecf0;
+    padding-bottom: 1rem;
+  }
+
+  .pops-project .btns {
+    position: absolute;
+    top: 91%;
+    left: 69%;
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #pop-xmark {
+    position: absolute;
+    left: 81.9%;
+    top: 11%;
+    font-size: 24px;
+    color: #67798e;
+  }
+
+  #tempate-image {
+    width: 100%;
+    height: 386px;
+  }
+
+  #caption {
+    display: flex;
+    align-items: center;
+  }
+
+  .btns img {
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  #caption img {
+    margin-bottom: 0.7rem;
+  }
+
+  .btns i {
+    font-size: 1rem;
+    margin-left: 0.3rem;
+  }
+
+  .btns button {
+    display: flex;
+    width: 5rem;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.5rem;
+  }
+
+  /* End of pop up section */
+
   /* portfolio  */
   .project {
     box-sizing: border-box;
@@ -511,7 +731,7 @@ textarea {
     margin: 100px 150px;
     display: grid;
     grid-template-rows: repeat(4, 2fr);
-    gap: 55px;
+    gap: 70px;
     padding: 24px;
   }
 
@@ -543,6 +763,7 @@ textarea {
 
   .langs-label ul {
     display: flex;
+    z-index: -899;
   }
 
   .langs-label li {
@@ -556,6 +777,11 @@ textarea {
   .langs-label p {
     margin-left: 0;
     margin-top: 0.5rem;
+  }
+
+  .poped-section .fa-xmark {
+    left: 90%;
+    top: 8%;
   }
 
   /* Contact me section */
