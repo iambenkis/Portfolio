@@ -72,7 +72,17 @@ const setStorage = () => {
   localStorage.setItem('data',JSON.stringify(formStorage));
 }
 
+const init = () => {
+  const storedData = localStorage.getItem('formData');
+  if (storedData) 
+      formStorage = JSON.parse(storedData);
+      console.log(storedData);
+}
 
+function clearStorage(){ //clears the entire localStorage
+  localStorage.clear()
+  console.log("clear records");
+}
 
 clearStorage()
 init()
