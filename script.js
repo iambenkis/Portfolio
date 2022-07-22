@@ -118,7 +118,7 @@ form.addEventListener('submit', (e) => {
   if (isEmailValid) {
     emailError.textContent = '';
   } else {
-    emailError.textContent = 'Kindly Check Your Email';
+    emailError.textContent = 'Please make Email lowercase';
     e.preventDefault();
   }
   // prevent the form from submitting

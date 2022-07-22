@@ -445,8 +445,8 @@ button:hover {
   border-radius: 0 0 5px 5px;
   box-sizing: border-box;
   position: absolute;
-  top: 88%;
-  left: 50%;
+  top: 625px;
+  left: 190px;
   font-size: 0.9rem;
 }
 
@@ -464,6 +464,11 @@ button:hover {
   margin-bottom: 1rem;
 }
 
+.ins {
+  display: flex;
+  flex-direction: column;
+}
+
 .contact-me-brief {
   color: #ebebff;
   font-size: 20px;
@@ -475,7 +480,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 10px;
   margin: 40px;
 }
@@ -512,14 +517,14 @@ textarea {
   border-radius: 5px;
 }
 
-.input-field-box button {
-  position: relative;
-  left: -24%;
+.input-field-box button { 
   color: #6070ff;
   font-size: 17px;
   background: #fff;
   border: 1px solid #6070ff;
   border-radius: 8px;
+  justify-self: start;
+  margin-top: 1rem;
 }
 
 .input-field-box button:hover {
@@ -807,6 +812,19 @@ textarea {
     justify-content: center;
     align-items: center;
   }
+  .input-field-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 40px;
+  }
+
+  .ins {
+    display: flex;
+    flex-direction: column;
+  }
 
   .contact-me p {
     width: 40%;
@@ -844,8 +862,8 @@ textarea {
     border-radius: 0 0 5px 5px;
     box-sizing: border-box;
     position: absolute;
-    top: 81%;
-    left: 43%;
+    top: 80%;
+    left: 41%;
     font-size: 1rem;
   }
 }
