@@ -1,3 +1,4 @@
+
 const projects = [
   {
     title: 'Tonic Tonic',
@@ -45,6 +46,8 @@ const projects = [
     company: 'Uber',
   },
 ];
+
+
 const faBars = document.querySelector('.fa-bars');
 const menu = document.querySelector('.menu');
 const faXmark = document.querySelector('.fa-xmark');
@@ -56,6 +59,23 @@ const seeProject = document.querySelectorAll('.see-prop');
 const emailContact = document.querySelector('#email');
 const form = document.getElementsByTagName('form')[0];
 const emailError = document.querySelector('.error');
+
+const setStorage = () => {
+  const userName = document.getElementById('user').value;
+  const email = emailContact.value;
+  const message = document.getElementById('message').value;
+  let formStorage = {
+    _userName : userName,
+    _email: email,
+    _message: message
+  };
+  localStorage.setItem('data',JSON.stringify(formStorage));
+}
+
+
+
+clearStorage()
+init()
 
 const displayItem = () => {
   menu.classList.add('active-menu');
@@ -117,9 +137,11 @@ form.addEventListener('submit', (e) => {
   const isEmailValid = isLowerCase(emailCnt);
   if (isEmailValid) {
     emailError.textContent = '';
+    setStorage();
   } else {
     emailError.textContent = 'Please make Email lowercase';
     e.preventDefault();
   }
   // prevent the form from submitting
 });
+

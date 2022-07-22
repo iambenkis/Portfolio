@@ -501,6 +501,7 @@ input {
 textarea {
   height: 10rem;
   color: #b3bac5;
+  padding: 0;
 }
 
 .input-field {
