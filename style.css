@@ -517,7 +517,7 @@ textarea {
   border-radius: 5px;
 }
 
-.input-field-box button { 
+.input-field-box button {
   color: #6070ff;
   font-size: 17px;
   background: #fff;
@@ -812,6 +812,7 @@ textarea {
     justify-content: center;
     align-items: center;
   }
+
   .input-field-box {
     display: flex;
     flex-direction: column;
