@@ -24,6 +24,7 @@ h2 {
 
 body {
   background-color: #e5e5e5;
+  overflow-y: scroll;
 }
 
 .header {
@@ -55,6 +56,11 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
+  transition: 0.5s;
+}
+
+.nav-bar .crntBtn {
+  color: #3347ff;
 }
 
 .nav-bar i {
@@ -104,44 +110,33 @@ body {
   display: none;
   z-index: 100000;
   overflow-y: scroll;
+  padding: 24px 0 24px 18px;  
 }
-
-.active-menu {
+ .active-menu {
   display: block;
 }
-
-.project-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  overflow-y: scroll;
-  background-color: #fff;
-  z-index: 2001;
-  width: 90%;
-  height: 95%;
-  border-radius: 15px;
+.ctn {
+  position: relative;
 }
 
 #pop-xmark {
-  position: fixed;
-  left: 85%;
-  top: 7%;
+  position: absolute;
+  left: 87%;
+  top: 1.5%;
   z-index: 10000;
   font-size: 24px;
   color: #67798e;
 }
 
+
 .pops-project {
-  width: 95%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 95%;  
   padding: 20px;
   border-radius: 16px;
   background-color: #fff;
 }
+
+
 
 .pops-project img {
   margin-top: 0.5rem;
@@ -502,6 +497,7 @@ textarea {
   height: 10rem;
   color: #b3bac5;
   padding: 0;
+
 }
 
 .input-field {
@@ -542,11 +538,9 @@ textarea {
   /* .mobile {
     display: flex;
   } */
-
-  body {
+  body{  
     -ms-overflow-style: none; /* for Internet Explorer, Edge */
-    scrollbar-width: none; /* for Firefox */
-    overflow-y: scroll;
+    scrollbar-width: none; /* for Firefox */ 
   }
 
   body::-webkit-scrollbar {
@@ -615,7 +609,12 @@ textarea {
   }
 
   /* start of pop up  */
-  .poped-section {
+
+
+  #pop-xmark { 
+    left: 92%; 
+  }
+  /* .poped-section {
     width: 100%;
     height: 100vh;
     overflow-y: scroll;
@@ -645,13 +644,13 @@ textarea {
     padding-bottom: 5rem;
     border-radius: 16px;
     background: rgb(255, 255, 255);
-    -ms-overflow-style: none; /* for Internet Explorer, Edge */
-    scrollbar-width: none; /* for Firefox */
+    -ms-overflow-style: none;  
+    scrollbar-width: none;
     overflow-y: scroll;
   }
 
   .pops-project::-webkit-scrollbar {
-    display: none; /* for Chrome, Safari, and Opera */
+    display: none;  
   }
 
   .pops-project img {
@@ -681,13 +680,7 @@ textarea {
     justify-content: space-around;
   }
 
-  #pop-xmark {
-    position: absolute;
-    left: 81.9%;
-    top: 11%;
-    font-size: 24px;
-    color: #67798e;
-  }
+ 
 
   #tempate-image {
     width: 100%;
@@ -720,7 +713,7 @@ textarea {
     align-items: center;
     justify-content: center;
     font-size: 0.5rem;
-  }
+  } */
 
   /* End of pop up section */
 
