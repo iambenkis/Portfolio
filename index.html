@@ -17,17 +17,17 @@
         <header class="header"> 
             <!-- The navbar section  start-->
             <nav class="nav-bar"> 
-                <a href="#" class="logo-txt">BenKis</a> 
+                <a href="#sd" class="logo-txt">BenKis</a> 
                 <i class="fa-solid fa-bars"></i>
                 <ul class="nav-list">
                     <li>
-                        <a href="#projects-container">Portfolio</a>
+                        <a href="#projects-containesr" class="scrollBtn">Portfolio</a>
                     </li>
                     <li>
-                        <a href="#about">About</a>
+                        <a href="#abouts" class="scrollBtn">About</a>
                     </li>
                     <li>
-                        <a href="#contact">Contact</a>
+                        <a href="#contacts" class="scrollBtn">Contact</a>
                     </li>
                 </ul>
             </nav> 
@@ -69,11 +69,11 @@
                     <a href="#contact" class="menu-item">Contact</a>
                 </li>
             </ul>
-        </nav>  
+        </nav>
         <!-- projects section -->
-        <section class="projects-container" id="projects-container"> 
+        <section class="projects-container section" id="projects-container"> 
             <div class="mobile project">
-                <img src="./images/project1.png" class="project-img" alt="Tonic Image">
+                <img src="./images/todo2.png" class="project-img" alt="Tonic Image">
                 <div class="project-txt">
                     <h2 class="project-title">Tonic <br>  Stories</h2>
                     <div class="caption">
@@ -166,7 +166,7 @@
             </div>
         </section>
         <!-- About section -->
-        <section class="about" id="about">
+        <section class="about section" id="about">
             <div class="about-content">
                 <div class="about-text">
                     <h2 class="about-title">About <br> Myself</h2>
@@ -244,7 +244,7 @@
                 </ul>
             </div>
         </section> 
-        <section class="contact-me" id="contact">
+        <section class="contact-me section" id="contact">
                 <h2 class="contact-me-text">Contact me</h2>
                 <p class="contact-me-brief">
                     If you have an application you are intrested in developing, a feature that
@@ -255,18 +255,25 @@
                     action="https://formspree.io/f/xeqnbaww"
                     method="POST">
                     <div class="input-field-box">
-                        <input class="input-field" type="text" name="name" maxlength="30" placeholder="Type your name" required>
-                        <input class="input-field" type="email" name="email" placeholder="Username@domain.ext" required>
-                        <textarea 
-                            class="write-message" 
-                            name="write message" 
-                            placeholder="Write your message here"
-                            maxlength="100" 
-                            rows="5" 
-                            cols="30"
-                            required>
-                        </textarea> 
-                        <button type="submit">Get in Touch</button>    
+                        <div class="ins">
+                            <input 
+                                class="input-field" 
+                                type="text" name="name" 
+                                maxlength="30" 
+                                id="user"
+                                placeholder="Type your name" 
+                                required>
+                             <input 
+                                class="input-field" 
+                                type="email" 
+                                name="email" 
+                                id="email"
+                                placeholder="username@domain.ext" 
+                                required>
+                            <textarea  class="write-message" id="message" placeholder="Write your message here" required> </textarea> 
+                        </div>
+                        <span class="error" aria-live="polite"></span> 
+                        <button type="submit" id="submit">Get in Touch</button>   
                     </div>
                 </form>
         </section> 

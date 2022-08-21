@@ -24,6 +24,7 @@ h2 {
 
 body {
   background-color: #e5e5e5;
+  overflow-y: scroll;
 }
 
 .header {
@@ -55,6 +56,11 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
+  transition: 0.5s;
+}
+
+.nav-bar .crntBtn {
+  color: #3347ff;
 }
 
 .nav-bar i {
@@ -103,6 +109,7 @@ body {
   backdrop-filter: blur(5px);
   display: none;
   z-index: 100000;
+  padding: 20px;
   overflow-y: scroll;
 }
 
@@ -110,23 +117,14 @@ body {
   display: block;
 }
 
-.project-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  overflow-y: scroll;
-  background-color: #fff;
-  z-index: 2001;
-  width: 90%;
-  height: 95%;
-  border-radius: 15px;
+.ctn {
+  position: relative;
 }
 
 #pop-xmark {
-  position: fixed;
-  left: 85%;
-  top: 7%;
+  position: absolute;
+  left: 87%;
+  top: 1.5%;
   z-index: 10000;
   font-size: 24px;
   color: #67798e;
@@ -134,13 +132,11 @@ body {
 
 .pops-project {
   width: 95%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   padding: 20px;
   border-radius: 16px;
   background-color: #fff;
+  position: relative;
+  border: 5px solid #c0cadb;
 }
 
 .pops-project img {
@@ -149,11 +145,12 @@ body {
 
 .pops-project .text {
   margin-bottom: -0.4rem;
+  width: 65%;
 }
 
 .pops-project .btns {
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
 }
 
 #tempate-image {
@@ -198,12 +195,18 @@ button {
   transition: 0.5s;
 }
 
-.btns button {
+.btns a {
   display: flex;
   width: 8.5rem;
   padding: 0.3rem;
   align-items: center;
   justify-content: center;
+  border: 1px solid #6070ff;
+  color: #396df2;
+  background-color: #fff;
+  border-radius: 8px;
+  transition: 0.5s;
+  margin-right: 0.5rem;
 }
 
 /* End of pop up section */
@@ -436,6 +439,22 @@ button:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
+}
+
+.error {
+  padding: 0;
+  color: rgb(219, 0, 0);
+  border-radius: 0 0 5px 5px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 625px;
+  left: 190px;
+  font-size: 0.9rem;
+}
+
+.error.active {
+  padding: 0.3em;
 }
 
 .contact-me-text {
@@ -446,6 +465,11 @@ button:hover {
   font-weight: 700;
   text-align: center;
   margin-bottom: 1rem;
+}
+
+.ins {
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-me-brief {
@@ -459,7 +483,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 10px;
   margin: 40px;
 }
@@ -480,6 +504,7 @@ input {
 textarea {
   height: 10rem;
   color: #b3bac5;
+  padding: 0;
 }
 
 .input-field {
@@ -497,13 +522,13 @@ textarea {
 }
 
 .input-field-box button {
-  position: relative;
-  left: -24%;
   color: #6070ff;
   font-size: 17px;
   background: #fff;
   border: 1px solid #6070ff;
   border-radius: 8px;
+  justify-self: start;
+  margin-top: 1rem;
 }
 
 .input-field-box button:hover {
@@ -516,15 +541,13 @@ textarea {
   background-color: #3347ff;
 }
 
-@media (min-width: 920px) {
+@media (min-width: 680px) {
   /* .mobile {
     display: flex;
   } */
-
   body {
     -ms-overflow-style: none; /* for Internet Explorer, Edge */
     scrollbar-width: none; /* for Firefox */
-    overflow-y: scroll;
   }
 
   body::-webkit-scrollbar {
@@ -593,45 +616,31 @@ textarea {
   }
 
   /* start of pop up  */
+
+  #pop-xmark {
+    left: 92%;
+  }
+
   .poped-section {
-    width: 100%;
-    height: 100vh;
-    overflow-y: scroll;
-    background-color: #091e423a;
-  }
-
-  .ctn {
-    background-color: #fff;
-  }
-
-  .active-menu {
-    display: block;
-  }
-
-  .project-container {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    border-radius: 0;
-    background-color: #091e423a;
+    padding: 20px;
   }
 
   .pops-project {
-    width: 70%;
-    margin-top: 5%;
-    padding: 24px;
-    padding-bottom: 5rem;
-    border-radius: 16px;
-    background: rgb(255, 255, 255);
+    width: 90%;
+    height: 90vh;
+    margin: auto 5%;
+    padding: 2rem;
+    background-color: rgb(255, 255, 255);
+    overflow-y: scroll;
     -ms-overflow-style: none; /* for Internet Explorer, Edge */
     scrollbar-width: none; /* for Firefox */
-    overflow-y: scroll;
   }
 
   .pops-project::-webkit-scrollbar {
-    display: none; /* for Chrome, Safari, and Opera */
+    display: none;
   }
 
+  /*
   .pops-project img {
     margin-top: 0.5rem;
   }
@@ -657,14 +666,6 @@ textarea {
     width: 25%;
     display: flex;
     justify-content: space-around;
-  }
-
-  #pop-xmark {
-    position: absolute;
-    left: 81.9%;
-    top: 11%;
-    font-size: 24px;
-    color: #67798e;
   }
 
   #tempate-image {
@@ -698,7 +699,7 @@ textarea {
     align-items: center;
     justify-content: center;
     font-size: 0.5rem;
-  }
+  } */
 
   /* End of pop up section */
 
@@ -709,7 +710,7 @@ textarea {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 14px 0;
+    padding: 14px;
   }
 
   .project:nth-child(even) {
@@ -761,6 +762,12 @@ textarea {
     width: 50%;
   }
 
+  .pops-project .languages {
+    position: absolute;
+    right: 11.5%;
+    bottom: -15%;
+  }
+
   .langs-label ul {
     display: flex;
     z-index: -899;
@@ -792,6 +799,20 @@ textarea {
     align-items: center;
   }
 
+  .input-field-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 40px;
+  }
+
+  .ins {
+    display: flex;
+    flex-direction: column;
+  }
+
   .contact-me p {
     width: 40%;
   }
@@ -820,5 +841,16 @@ textarea {
   .input-field-box button {
     position: relative;
     left: 0%;
+  }
+
+  .error {
+    padding: 0;
+    color: rgb(219, 0, 0);
+    border-radius: 0 0 5px 5px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 80%;
+    left: 41%;
+    font-size: 1rem;
   }
 }

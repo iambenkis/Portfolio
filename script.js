@@ -2,7 +2,7 @@ const projects = [
   {
     title: 'Tonic Tonic',
     languages: ['Html', 'Css', 'Javascipt'],
-    image: './images/project1.png',
+    image: './images/toDo.png',
     description: `A daily selection of privately personalized reads;
         no accounts sign-ups required. Recusandae maiores A daily selection of privately personalized reads;
         no accounts sign-ups required. Recusandae maiores 
@@ -45,6 +45,7 @@ const projects = [
     company: 'Uber',
   },
 ];
+
 const faBars = document.querySelector('.fa-bars');
 const menu = document.querySelector('.menu');
 const faXmark = document.querySelector('.fa-xmark');
@@ -53,6 +54,50 @@ const popApp = document.querySelector('.poped-section');
 const projectContent = document.querySelector('.pops-project');
 const popXmark = document.querySelector('#pop-xmark');
 const seeProject = document.querySelectorAll('.see-prop');
+const emailContact = document.querySelector('#email');
+const form = document.getElementsByTagName('form')[0];
+const emailError = document.querySelector('.error');
+const section = document.querySelectorAll('.section');
+const scrollBtn = document.querySelectorAll('.scrollBtn');
+
+scrollBtn.forEach((btn, index) => {
+  btn.addEventListener('click', () => {
+    scrollBtn.forEach((b) => {
+      b.classList.remove('crntBtn');
+    });
+    section[index].scrollIntoView({ behavior: 'smooth' });
+    btn.classList.add('crntBtn');
+  });
+});
+
+document.querySelector('.logo-txt').addEventListener('click', () => {
+  document.querySelector('.header').scrollIntoView({ behavior: 'smooth' });
+});
+
+const init = () => {
+  const storedData = localStorage.getItem('formData');
+  if (storedData) { JSON.parse(storedData); }
+};
+
+function clearStorage() { // clears the entire localStorage
+  localStorage.clear();
+  console.log('clear records');
+}
+
+clearStorage();
+init();
+
+const setStorage = () => {
+  const userName = document.getElementById('user').value;
+  const email = emailContact.value;
+  const message = document.getElementById('message').value;
+  const formStorage = {
+    _userName: userName,
+    _email: email,
+    _message: message,
+  };
+  localStorage.setItem('data', JSON.stringify(formStorage));
+};
 
 const displayItem = () => {
   menu.classList.add('active-menu');
@@ -86,17 +131,42 @@ seeProject.forEach((project, index) => project.addEventListener('click', (e) => 
             <p>${projects[index].year}</p>
         </div>
         <img id="tempate-image" src="${projects[index].image}" alt="Multi - Post Stories">
-        <p class="text">${projects[index].description}</p>
+        <p class="text">${projects[index].description}</p> 
         ${projects[index].languages ? printLang(projects[index].languages) : ''}
         <div class="btns">
-            <button> 
+            <a 
+              href="https://iambenkis.github.io/To-Do-list/dist/"
+              target="_blank"> 
                 See Live
                 <img src="./images/Icon.png" alt="live icon">
-            </button> 
-            <button>
+            </a> 
+            <a 
+              href="https://github.com/iambenkis/To-Do-list"
+              target="_blank">
                 See Source
                 <i class="fa-brands fa-github"></i>
-            </button> 
+            </a> 
         </div>
     `;
 }));
+
+const isLowerCase = (str) => {
+  const regExp = /[A-Z]/;
+  const isMatch = regExp.test(str);
+  if (str === '') return false;
+  const result = !isMatch;
+  return result;
+};
+
+form.addEventListener('submit', (e) => {
+  const emailCnt = emailContact.value;
+  const isEmailValid = isLowerCase(emailCnt);
+  if (isEmailValid) {
+    emailError.textContent = '';
+    setStorage();
+  } else {
+    emailError.textContent = 'Please make Email lowercase';
+    e.preventDefault();
+  }
+  // prevent the form from submitting
+});
