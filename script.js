@@ -75,6 +75,13 @@ document.querySelector('.logo-txt').addEventListener('click', ()=> {
   document.querySelector('.header').scrollIntoView({behavior : 'smooth'});
 })
 
+const init = () => {
+  const storedData = localStorage.getItem('formData');
+  if (storedData) 
+      formStorage = JSON.parse(storedData);
+      console.log(storedData);
+}
+
 clearStorage();
 init();
 
@@ -88,13 +95,6 @@ const setStorage = () => {
     _message: message
   };
   localStorage.setItem('data',JSON.stringify(formStorage));
-}
-
-const init = () => {
-  const storedData = localStorage.getItem('formData');
-  if (storedData) 
-      formStorage = JSON.parse(storedData);
-      console.log(storedData);
 }
 
 function clearStorage(){ //clears the entire localStorage
