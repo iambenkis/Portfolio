@@ -108,13 +108,15 @@ body {
   height: 100vh;
   backdrop-filter: blur(5px);
   display: none;
-  z-index: 100000; 
-  padding: 20px;  
+  z-index: 100000;
+  padding: 20px;
   overflow-y: scroll;
 }
- .active-menu {
+
+.active-menu {
   display: block;
 }
+
 .ctn {
   position: relative;
 }
@@ -128,9 +130,8 @@ body {
   color: #67798e;
 }
 
-
 .pops-project {
-  width: 95%;  
+  width: 95%;
   padding: 20px;
   border-radius: 16px;
   background-color: #fff;
@@ -138,14 +139,12 @@ body {
   border: 5px solid #c0cadb;
 }
 
-
-
 .pops-project img {
-  margin-top: 0.5rem; 
+  margin-top: 0.5rem;
 }
 
 .pops-project .text {
-  margin-bottom: -0.4rem; 
+  margin-bottom: -0.4rem;
   width: 65%;
 }
 
@@ -204,10 +203,10 @@ button {
   justify-content: center;
   border: 1px solid #6070ff;
   color: #396df2;
-  background-color: #fff; 
+  background-color: #fff;
   border-radius: 8px;
   transition: 0.5s;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 /* End of pop up section */
@@ -506,7 +505,6 @@ textarea {
   height: 10rem;
   color: #b3bac5;
   padding: 0;
-
 }
 
 .input-field {
@@ -547,9 +545,9 @@ textarea {
   /* .mobile {
     display: flex;
   } */
-  body{  
+  body {
     -ms-overflow-style: none; /* for Internet Explorer, Edge */
-    scrollbar-width: none; /* for Firefox */ 
+    scrollbar-width: none; /* for Firefox */
   }
 
   body::-webkit-scrollbar {
@@ -619,34 +617,30 @@ textarea {
 
   /* start of pop up  */
 
-
-  #pop-xmark { 
-    left: 92%; 
+  #pop-xmark {
+    left: 92%;
   }
-  
-.poped-section {
-  padding: 20px;
-  
-}
 
-.pops-project {
-  width: 90%; 
-  height: 90vh;
-  margin: auto 5%; 
-  padding: 2rem;
-  background-color: rgb(255, 255, 255); 
-  overflow-y: scroll;
-  -ms-overflow-style: none; /* for Internet Explorer, Edge */
-  scrollbar-width: none; /* for Firefox */ 
-}
-
-.pops-project img { 
-}
-
-.pops-project::-webkit-scrollbar {
-    display: none;  
+  .poped-section {
+    padding: 20px;
   }
-/*
+
+  .pops-project {
+    width: 90%;
+    height: 90vh;
+    margin: auto 5%;
+    padding: 2rem;
+    background-color: rgb(255, 255, 255);
+    overflow-y: scroll;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+  }
+
+  .pops-project::-webkit-scrollbar {
+    display: none;
+  }
+
+  /*
   .pops-project img {
     margin-top: 0.5rem;
   }
@@ -674,7 +668,7 @@ textarea {
     justify-content: space-around;
   }
 
- 
+
 
   #tempate-image {
     width: 100%;
@@ -771,7 +765,7 @@ textarea {
   }
 
   .pops-project .languages {
-    position: absolute; 
+    position: absolute;
     right: 11.5%;
     bottom: -15%;
   }

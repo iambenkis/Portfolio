@@ -46,7 +46,6 @@ const projects = [
   },
 ];
 
-
 const faBars = document.querySelector('.fa-bars');
 const menu = document.querySelector('.menu');
 const faXmark = document.querySelector('.fa-xmark');
@@ -61,25 +60,28 @@ const emailError = document.querySelector('.error');
 const section = document.querySelectorAll('.section');
 const scrollBtn = document.querySelectorAll('.scrollBtn');
 
-scrollBtn.forEach((btn,index) => {
+scrollBtn.forEach((btn, index) => {
   btn.addEventListener('click', () => {
-    scrollBtn.forEach(b => {
+    scrollBtn.forEach((b) => {
       b.classList.remove('crntBtn');
     });
-    section[index].scrollIntoView({behavior : 'smooth'});
+    section[index].scrollIntoView({ behavior: 'smooth' });
     btn.classList.add('crntBtn');
-  })
-})
+  });
+});
 
-document.querySelector('.logo-txt').addEventListener('click', ()=> {
-  document.querySelector('.header').scrollIntoView({behavior : 'smooth'});
-})
+document.querySelector('.logo-txt').addEventListener('click', () => {
+  document.querySelector('.header').scrollIntoView({ behavior: 'smooth' });
+});
 
 const init = () => {
   const storedData = localStorage.getItem('formData');
-  if (storedData) 
-      formStorage = JSON.parse(storedData);
-      console.log(storedData);
+  if (storedData) { JSON.parse(storedData); }
+};
+
+function clearStorage() { // clears the entire localStorage
+  localStorage.clear();
+  console.log('clear records');
 }
 
 clearStorage();
@@ -89,18 +91,13 @@ const setStorage = () => {
   const userName = document.getElementById('user').value;
   const email = emailContact.value;
   const message = document.getElementById('message').value;
-  let formStorage = {
-    _userName : userName,
+  const formStorage = {
+    _userName: userName,
     _email: email,
-    _message: message
+    _message: message,
   };
-  localStorage.setItem('data',JSON.stringify(formStorage));
-}
-
-function clearStorage(){ //clears the entire localStorage
-  localStorage.clear()
-  console.log("clear records");
-}
+  localStorage.setItem('data', JSON.stringify(formStorage));
+};
 
 const displayItem = () => {
   menu.classList.add('active-menu');
@@ -122,7 +119,7 @@ faXmark.addEventListener('click', disableItem);
 popXmark.addEventListener('click', disableProject);
 menuItem.forEach((item) => item.addEventListener('click', disableItem));
 seeProject.forEach((project, index) => project.addEventListener('click', (e) => {
-  e.preventDefault(); 
+  e.preventDefault();
   popApp.classList.add('active-menu');
   projectContent.innerHTML = `
         <h2 class="project-title">${projects[index].title}</h2>
@@ -134,7 +131,7 @@ seeProject.forEach((project, index) => project.addEventListener('click', (e) => 
             <p>${projects[index].year}</p>
         </div>
         <img id="tempate-image" src="${projects[index].image}" alt="Multi - Post Stories">
-        <p class="text">${projects[index].description}</p>
+        <p class="text">${projects[index].description}</p> 
         ${projects[index].languages ? printLang(projects[index].languages) : ''}
         <div class="btns">
             <a 
@@ -173,4 +170,3 @@ form.addEventListener('submit', (e) => {
   }
   // prevent the form from submitting
 });
-
