@@ -398,6 +398,11 @@ button:hover {
   justify-content: space-between;
   padding: 1rem 0.5rem;
   border-bottom: 1px solid #dfe1e6;
+  transition: 0.4s;
+}
+
+.knowledge-label i {
+  cursor: pointer;
 }
 
 .knowledge .scrolled {
@@ -413,6 +418,21 @@ button:hover {
 .resume {
   border-bottom: none;
   position: relative;
+}
+
+.langs-label {
+  padding: 0 18px;
+  background-color: rgba(255, 255, 255, 0.308);
+  max-height: 0;
+  overflow: hidden;
+  transition:0.2s ease-out;
+  display: none;
+  padding: 1rem;
+}
+
+.active {
+  display: block;
+  transition: 0.2s ease-out;
 }
 
 .langs-label p {
@@ -545,15 +565,7 @@ textarea {
   /* .mobile {
     display: flex;
   } */
-  body {
-    -ms-overflow-style: none; /* for Internet Explorer, Edge */
-    scrollbar-width: none; /* for Firefox */
-  }
-
-  body::-webkit-scrollbar {
-    display: none; /* for Chrome, Safari, and Opera */
-  }
-
+  
   .mobile {
     display: flex;
   }

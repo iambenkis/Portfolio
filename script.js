@@ -59,7 +59,10 @@ const form = document.getElementsByTagName('form')[0];
 const emailError = document.querySelector('.error');
 const section = document.querySelectorAll('.section');
 const scrollBtn = document.querySelectorAll('.scrollBtn');
-
+const kwoledgeBtn = document.querySelectorAll('.knowledge-label');
+const knowledgeLabel = document.querySelectorAll('.langs-label');
+const angleDown = document.querySelectorAll('.fa-angle-down');
+const angleRight = document.querySelectorAll('.fa-angle-right');
 scrollBtn.forEach((btn, index) => {
   btn.addEventListener('click', () => {
     scrollBtn.forEach((b) => {
@@ -167,6 +170,34 @@ form.addEventListener('submit', (e) => {
   } else {
     emailError.textContent = 'Please make Email lowercase';
     e.preventDefault();
-  }
-  // prevent the form from submitting
+  } 
 });
+
+angleDown.forEach(angle => {
+  angle.style.display = 'none';
+})
+angleRight.forEach((btn,id) => {
+  btn.addEventListener('click', () => { 
+    knowledgeLabel[id].classList.add('active');
+    angleDown[id].style.display = 'block'; 
+    angleRight[id].style.display = 'none';
+    if (knowledgeLabel[id].style.maxHeight) {
+      knowledgeLabel[id].style.display = null;
+    } else {
+      knowledgeLabel[id].style.maxHeight = knowledgeLabel[id].scrollHeight + "px";
+    } 
+  })
+})
+
+angleDown.forEach((btn,id) => {
+  btn.addEventListener('click', () => { 
+    knowledgeLabel[id].classList.remove('active');
+    angleDown[id].style.display = 'none'; 
+    angleRight[id].style.display = 'block';
+    if (knowledgeLabel[id].style.maxHeight) {
+      knowledgeLabel[id].style.display = null;
+    } else {
+      knowledgeLabel[id].style.maxHeight = knowledgeLabel[id].scrollHeight + "px";
+    } 
+  })
+})
