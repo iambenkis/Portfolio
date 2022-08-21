@@ -2,7 +2,7 @@ const projects = [
   {
     title: 'Tonic Tonic',
     languages: ['Html', 'Css', 'Javascipt'],
-    image: './images/project1.png',
+    image: './images/toDo.png',
     description: `A daily selection of privately personalized reads;
         no accounts sign-ups required. Recusandae maiores A daily selection of privately personalized reads;
         no accounts sign-ups required. Recusandae maiores 
@@ -137,14 +137,18 @@ seeProject.forEach((project, index) => project.addEventListener('click', (e) => 
         <p class="text">${projects[index].description}</p>
         ${projects[index].languages ? printLang(projects[index].languages) : ''}
         <div class="btns">
-            <button> 
+            <a 
+              href="https://iambenkis.github.io/To-Do-list/dist/"
+              target="_blank"> 
                 See Live
                 <img src="./images/Icon.png" alt="live icon">
-            </button> 
-            <button>
+            </a> 
+            <a 
+              href="https://github.com/iambenkis/To-Do-list"
+              target="_blank">
                 See Source
                 <i class="fa-brands fa-github"></i>
-            </button> 
+            </a> 
         </div>
     `;
 }));

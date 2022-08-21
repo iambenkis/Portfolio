@@ -108,9 +108,9 @@ body {
   height: 100vh;
   backdrop-filter: blur(5px);
   display: none;
-  z-index: 100000;
+  z-index: 100000; 
+  padding: 20px;  
   overflow-y: scroll;
-  padding: 24px 0 24px 18px;  
 }
  .active-menu {
   display: block;
@@ -134,21 +134,24 @@ body {
   padding: 20px;
   border-radius: 16px;
   background-color: #fff;
+  position: relative;
+  border: 5px solid #c0cadb;
 }
 
 
 
 .pops-project img {
-  margin-top: 0.5rem;
+  margin-top: 0.5rem; 
 }
 
 .pops-project .text {
-  margin-bottom: -0.4rem;
+  margin-bottom: -0.4rem; 
+  width: 65%;
 }
 
 .pops-project .btns {
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
 }
 
 #tempate-image {
@@ -193,12 +196,18 @@ button {
   transition: 0.5s;
 }
 
-.btns button {
+.btns a {
   display: flex;
   width: 8.5rem;
   padding: 0.3rem;
   align-items: center;
   justify-content: center;
+  border: 1px solid #6070ff;
+  color: #396df2;
+  background-color: #fff; 
+  border-radius: 8px;
+  transition: 0.5s;
+  margin-right: .5rem;
 }
 
 /* End of pop up section */
@@ -534,7 +543,7 @@ textarea {
   background-color: #3347ff;
 }
 
-@media (min-width: 920px) {
+@media (min-width: 680px) {
   /* .mobile {
     display: flex;
   } */
@@ -614,45 +623,30 @@ textarea {
   #pop-xmark { 
     left: 92%; 
   }
-  /* .poped-section {
-    width: 100%;
-    height: 100vh;
-    overflow-y: scroll;
-    background-color: #091e423a;
-  }
+  
+.poped-section {
+  padding: 20px;
+  
+}
 
-  .ctn {
-    background-color: #fff;
-  }
+.pops-project {
+  width: 90%; 
+  height: 90vh;
+  margin: auto 5%; 
+  padding: 2rem;
+  background-color: rgb(255, 255, 255); 
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */ 
+}
 
-  .active-menu {
-    display: block;
-  }
+.pops-project img { 
+}
 
-  .project-container {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    border-radius: 0;
-    background-color: #091e423a;
-  }
-
-  .pops-project {
-    width: 70%;
-    margin-top: 5%;
-    padding: 24px;
-    padding-bottom: 5rem;
-    border-radius: 16px;
-    background: rgb(255, 255, 255);
-    -ms-overflow-style: none;  
-    scrollbar-width: none;
-    overflow-y: scroll;
-  }
-
-  .pops-project::-webkit-scrollbar {
+.pops-project::-webkit-scrollbar {
     display: none;  
   }
-
+/*
   .pops-project img {
     margin-top: 0.5rem;
   }
@@ -724,7 +718,7 @@ textarea {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 14px 0;
+    padding: 14px;
   }
 
   .project:nth-child(even) {
@@ -774,6 +768,12 @@ textarea {
 
   .knowledge {
     width: 50%;
+  }
+
+  .pops-project .languages {
+    position: absolute; 
+    right: 11.5%;
+    bottom: -15%;
   }
 
   .langs-label ul {
