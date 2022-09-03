@@ -24,15 +24,17 @@ const projects = [
     company: 'BenKis',
   },
   {
-    title: 'Facebook 360',
+    title: 'Global Summit',
     languages: ['Html', 'Css', 'Javascipt'],
-    image: './images/project3.png',
-    description: `  A daily selection of privately personalized reads;
-        no accounts sign-ups required.A daily selection of privately personalized reads;
-        no accounts sign-ups required.`,
-    year: 2020,
-    job: 'Full Stack Dev',
-    company: 'FACEBOOK',
+    image: './images/svg1.png',
+    description: `In this capstone project I build a project based on an 
+    online website for a conference.I have been given design guidelines 
+    to create the website (design guidelines), I had personalized the 
+    content,though I built the website based on the content of a Global 
+    Manufacture and Industry Summit 2022 conference.`,
+    year: 2022,
+    job: 'Front End Dev',
+    company: 'BenKis',
   },
   {
     title: 'Uber Navigation',

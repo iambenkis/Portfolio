@@ -652,67 +652,6 @@ textarea {
     display: none;
   }
 
-  /*
-  .pops-project img {
-    margin-top: 0.5rem;
-  }
-
-  .pops-project .text {
-    margin-bottom: -0.4rem;
-    width: 70%;
-  }
-
-  .pops-project .languages {
-    width: 22%;
-    position: absolute;
-    top: 81%;
-    left: 70%;
-    border-bottom: 1px solid #ebecf0;
-    padding-bottom: 1rem;
-  }
-
-  .pops-project .btns {
-    position: absolute;
-    top: 91%;
-    left: 69%;
-    width: 25%;
-    display: flex;
-    justify-content: space-around;
-  }
-
-  #tempate-image {
-    width: 100%;
-    height: 386px;
-  }
-
-  #caption {
-    display: flex;
-    align-items: center;
-  }
-
-  .btns img {
-    margin-left: 0.5rem;
-    margin-bottom: 0.5rem;
-  }
-
-  #caption img {
-    margin-bottom: 0.7rem;
-  }
-
-  .btns i {
-    font-size: 1rem;
-    margin-left: 0.3rem;
-  }
-
-  .btns button {
-    display: flex;
-    width: 5rem;
-    padding: 0;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.5rem;
-  } */
-
   /* End of pop up section */
 
   /* portfolio  */
@@ -777,7 +716,7 @@ textarea {
   .pops-project .languages {
     position: absolute;
     right: 11.5%;
-    bottom: -15%;
+    bottom: -135px;
   }
 
   .langs-label ul {
