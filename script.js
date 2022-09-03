@@ -1,26 +1,26 @@
 const projects = [
   {
-    title: 'Tonic Tonic',
+    title: 'Todo List',
     languages: ['Html', 'Css', 'Javascipt'],
     image: './images/toDo.png',
-    description: `A daily selection of privately personalized reads;
-        no accounts sign-ups required. Recusandae maiores A daily selection of privately personalized reads;
-        no accounts sign-ups required. Recusandae maiores 
-        natus `,
-    year: 2015,
-    job: 'BAck end Dev',
-    company: 'CANOPY',
+    description: `AThe todo list lists everything that you have to do, 
+    with the most important tasks at the top of the list, and the least
+     important tasks at the bottom using a corresponding index of each task. 
+     The project is build with HTML,CSS and Javascript.`,
+    year: 2022,
+    job: 'Front end Dev',
+    company: 'BenKis',
   },
   {
-    title: 'Multi - Post Stories',
+    title: 'Leaderboard',
     languages: ['Html', 'Css', 'Javascipt'],
     image: './images/project2.png',
     description: `     A daily selection of privately personalized reads;
         no accounts sign-ups required. Lorem ipsum dolor sit amet.A daily selection of privately personalized reads;
         no accounts sign-ups required.`,
-    year: 2018,
-    job: 'Full Stack Dev',
-    company: 'FACEBOOK',
+    year: 2022,
+    job: 'Front end Dev',
+    company: 'BenKis',
   },
   {
     title: 'Facebook 360',
