@@ -14,10 +14,11 @@ const projects = [
   {
     title: 'Leaderboard',
     languages: ['Html', 'Css', 'Javascipt'],
-    image: './images/project2.png',
-    description: `     A daily selection of privately personalized reads;
-        no accounts sign-ups required. Lorem ipsum dolor sit amet.A daily selection of privately personalized reads;
-        no accounts sign-ups required.`,
+    image: './images/leader7.png',
+    description: `A leaderboard showing the names and current scores of the 
+    leading competitors.The project is set up as a javaScript 
+    project using webpack and ES6 features.This leaderboard is a Api based application 
+    for storing scores online!`,
     year: 2022,
     job: 'Front end Dev',
     company: 'BenKis',
