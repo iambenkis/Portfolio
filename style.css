@@ -422,11 +422,10 @@ button:hover {
 }
 
 .langs-label {
-  padding: 0 18px;
   background-color: rgba(255, 255, 255, 0.308);
   max-height: 0;
   overflow: hidden;
-  transition:0.2s ease-out;
+  transition: 0.2s ease-out;
   display: none;
   padding: 1rem;
 }
@@ -566,7 +565,7 @@ textarea {
   /* .mobile {
     display: flex;
   } */
-  
+
   .mobile {
     display: flex;
   }
