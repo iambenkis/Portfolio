@@ -216,7 +216,7 @@ button {
   background-color: #ebebff;
   color: #6070ff;
   font-weight: 500;
-  font-size: 12px; 
+  font-size: 12px;
   border-radius: 8px;
   margin-right: 0.5rem;
   height: 1.5rem;
@@ -712,13 +712,10 @@ textarea {
   .knowledge {
     width: 50%;
   }
-.langv {
-  display: flex;
-  width: 100%;
-}
 
-  .pops-project .languages {
-      
+  .langv {
+    display: flex;
+    width: 100%;
   }
 
   .langs-label ul {

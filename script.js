@@ -9,9 +9,9 @@ const projects = [
      The project is build with HTML,CSS and Javascript.`,
     year: 2022,
     job: 'Front end Dev',
-    company: 'BenKis',    
-    sourceCode : 'https://iambenkis.github.io/To-Do-list/dist/',
-    liveDemo : 'https://github.com/iambenkis/To-Do-list'
+    company: 'BenKis',
+    sourceCode: 'https://iambenkis.github.io/To-Do-list/dist/',
+    liveDemo: 'https://github.com/iambenkis/To-Do-list',
   },
   {
     title: 'Leaderboard',
@@ -24,8 +24,8 @@ const projects = [
     year: 2022,
     job: 'Front end Dev',
     company: 'BenKis',
-    sourceCode : 'https://github.com/iambenkis/Leaderboard.git',
-    liveDemo : 'https://iambenkis.github.io/Leaderboard/dist/'
+    sourceCode: 'https://github.com/iambenkis/Leaderboard.git',
+    liveDemo: 'https://iambenkis.github.io/Leaderboard/dist/',
   },
   {
     title: 'Global Summit',
@@ -39,8 +39,8 @@ const projects = [
     year: 2022,
     job: 'Front End Dev',
     company: 'BenKis',
-    sourceCode : 'https://github.com/iambenkis/Global-summit-GMIS-.git',
-    liveDemo : 'https://iambenkis.github.io/Global-summit-GMIS-/'
+    sourceCode: 'https://github.com/iambenkis/Global-summit-GMIS-.git',
+    liveDemo: 'https://iambenkis.github.io/Global-summit-GMIS-/',
   },
   {
     title: 'Uber Navigation',
