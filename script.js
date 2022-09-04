@@ -9,7 +9,9 @@ const projects = [
      The project is build with HTML,CSS and Javascript.`,
     year: 2022,
     job: 'Front end Dev',
-    company: 'BenKis',
+    company: 'BenKis',    
+    sourceCode : 'https://iambenkis.github.io/To-Do-list/dist/',
+    liveDemo : 'https://github.com/iambenkis/To-Do-list'
   },
   {
     title: 'Leaderboard',
@@ -22,6 +24,8 @@ const projects = [
     year: 2022,
     job: 'Front end Dev',
     company: 'BenKis',
+    sourceCode : 'https://github.com/iambenkis/Leaderboard.git',
+    liveDemo : 'https://iambenkis.github.io/Leaderboard/dist/'
   },
   {
     title: 'Global Summit',
@@ -35,6 +39,8 @@ const projects = [
     year: 2022,
     job: 'Front End Dev',
     company: 'BenKis',
+    sourceCode : 'https://github.com/iambenkis/Global-summit-GMIS-.git',
+    liveDemo : 'https://iambenkis.github.io/Global-summit-GMIS-/'
   },
   {
     title: 'Uber Navigation',
@@ -135,17 +141,19 @@ seeProject.forEach((project, index) => project.addEventListener('click', (e) => 
             <p>${projects[index].year}</p>
         </div>
         <img id="tempate-image" src="${projects[index].image}" alt="Multi - Post Stories">
-        <p class="text">${projects[index].description}</p> 
-        ${projects[index].languages ? printLang(projects[index].languages) : ''}
+        <div class="langv">
+            <p class="text">${projects[index].description}</p> 
+            ${projects[index].languages ? printLang(projects[index].languages) : ''}
+        </div>
         <div class="btns">
             <a 
-              href="https://iambenkis.github.io/To-Do-list/dist/"
+              href="${projects[index].liveDemo}"
               target="_blank"> 
                 See Live
                 <img src="./images/Icon.png" alt="live icon">
             </a> 
             <a 
-              href="https://github.com/iambenkis/To-Do-list"
+              href="${projects[index].sourceCode}"
               target="_blank">
                 See Source
                 <i class="fa-brands fa-github"></i>
