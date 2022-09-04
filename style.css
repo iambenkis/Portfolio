@@ -217,9 +217,9 @@ button {
   color: #6070ff;
   font-weight: 500;
   font-size: 12px;
-  line-height: 16px;
   border-radius: 8px;
   margin-right: 0.5rem;
+  height: 1.5rem;
 }
 
 .langs-label li {
@@ -713,10 +713,9 @@ textarea {
     width: 50%;
   }
 
-  .pops-project .languages {
-    position: absolute;
-    right: 11.5%;
-    bottom: -135px;
+  .langv {
+    display: flex;
+    width: 100%;
   }
 
   .langs-label ul {
