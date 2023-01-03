@@ -716,6 +716,15 @@ textarea {
     border-top-right-radius: 50px;
   }
 
+  .get-resume {
+    border: 1px solid #6070ff;
+    color: #396df2;
+    background-color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: 0.5s;
+  }
+
   .about-content {
     display: flex;
     justify-content: space-between;
