@@ -736,6 +736,10 @@ textarea {
     margin-top: 0.5rem;
   }
 
+  .langs-label img {
+    width: 3rem;
+  }
+
   .poped-section .fa-xmark {
     left: 90%;
     top: 8%;
