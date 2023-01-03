@@ -3,9 +3,9 @@ const projects = [
     title: 'Todo List',
     languages: ['Html', 'Css', 'Javascipt'],
     image: './images/toDo.png',
-    description: `AThe todo list lists everything that you have to do, 
+    description: `AThe todo list lists everything that you have to do,
     with the most important tasks at the top of the list, and the least
-     important tasks at the bottom using a corresponding index of each task. 
+     important tasks at the bottom using a corresponding index of each task.
      The project is build with HTML,CSS and Javascript.`,
     year: 2022,
     job: 'Front end Dev',
@@ -17,9 +17,9 @@ const projects = [
     title: 'Leaderboard',
     languages: ['Html', 'Css', 'Javascipt'],
     image: './images/leader7.png',
-    description: `A leaderboard showing the names and current scores of the 
-    leading competitors.The project is set up as a javaScript 
-    project using webpack and ES6 features.This leaderboard is a Api based application 
+    description: `A leaderboard showing the names and current scores of the
+    leading competitors.The project is set up as a javaScript
+    project using webpack and ES6 features.This leaderboard is a Api based application
     for storing scores online!`,
     year: 2022,
     job: 'Front end Dev',
@@ -31,10 +31,10 @@ const projects = [
     title: 'Global Summit',
     languages: ['Html', 'Css', 'Javascipt'],
     image: './images/svg1.png',
-    description: `In this capstone project I build a project based on an 
-    online website for a conference.I have been given design guidelines 
-    to create the website (design guidelines), I had personalized the 
-    content,though I built the website based on the content of a Global 
+    description: `In this capstone project I build a project based on an
+    online website for a conference.I have been given design guidelines
+    to create the website (design guidelines), I had personalized the
+    content,though I built the website based on the content of a Global
     Manufacture and Industry Summit 2022 conference.`,
     year: 2022,
     job: 'Front End Dev',
@@ -43,15 +43,17 @@ const projects = [
     liveDemo: 'https://iambenkis.github.io/Global-summit-GMIS-/',
   },
   {
-    title: 'Uber Navigation',
-    languages: ['Html', 'Css', 'Javascipt'],
-    image: './images/project4.png',
-    description: `   A daily selection of privately personalized reads;
-        no accounts sign-ups required.A daily selection of privately personalized reads;
-        no accounts sign-ups required.`,
+    title: 'Space  Traveller',
+    languages: ['React Js', 'Redux Js', 'Css'],
+    image: './images/space-1.png',
+    description: `About
+    In this project, We build with the real live data from
+    the SpaceX API. The application will allow users to book
+    rockets and join selected space missions. We build it using
+    react and redux.`,
     year: 2022,
-    job: 'Lead Developer',
-    company: 'Uber',
+    job: 'React Developer',
+    company: 'Benkis',
   },
 ];
 
@@ -142,22 +144,22 @@ seeProject.forEach((project, index) => project.addEventListener('click', (e) => 
         </div>
         <img id="tempate-image" src="${projects[index].image}" alt="Multi - Post Stories">
         <div class="langv">
-            <p class="text">${projects[index].description}</p> 
+            <p class="text">${projects[index].description}</p>
             ${projects[index].languages ? printLang(projects[index].languages) : ''}
         </div>
         <div class="btns">
-            <a 
+            <a
               href="${projects[index].liveDemo}"
-              target="_blank"> 
+              target="_blank">
                 See Live
                 <img src="./images/Icon.png" alt="live icon">
-            </a> 
-            <a 
+            </a>
+            <a
               href="${projects[index].sourceCode}"
               target="_blank">
                 See Source
                 <i class="fa-brands fa-github"></i>
-            </a> 
+            </a>
         </div>
     `;
 }));
