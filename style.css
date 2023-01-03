@@ -260,6 +260,10 @@ button {
   display: none;
 }
 
+.langs-label img {
+  width: 3rem;
+}
+
 .menu a {
   font-weight: 600;
   font-size: 32px;
@@ -766,10 +770,6 @@ textarea {
   .langs-label p {
     margin-left: 0;
     margin-top: 0.5rem;
-  }
-
-  .langs-label img {
-    width: 3rem;
   }
 
   .poped-section .fa-xmark {
