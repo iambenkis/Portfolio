@@ -680,11 +680,28 @@ textarea {
   }
 
   .projects-container {
-    margin: 100px 150px;
+    margin: 10px 150px;
     display: grid;
     grid-template-rows: repeat(4, 2fr);
     gap: 70px;
     padding: 24px;
+  }
+
+  .see-project {
+    color: #6070ff;
+    font-size: 17px;
+    background: #fff;
+    border: 1px solid #6070ff;
+    border-radius: 8px;
+    justify-self: start;
+    margin: 0rem;
+    padding: .3rem;
+    cursor: pointer;
+  }
+
+  .see-project:hover {
+    background-color: #396df2;
+    color: #fff;
   }
 
   .project-txt {

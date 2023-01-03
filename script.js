@@ -1,5 +1,31 @@
 const projects = [
   {
+    title: 'Recipe App',
+    languages: ['Ruby on rails', 'Bootstrap'],
+    image: './images/recipe.png',
+    description: `The Recipe app keeps track of all your recipes, ingredients, and inventory.
+    It allows you to save ingredients, keep track of what you have, create recipes,
+    and generate a shopping list based on what you have and what you are missing from a recipe.`,
+    year: 2022,
+    job: 'Front end Dev',
+    company: 'BenKis',
+    sourceCode: 'https://github.com/yasinabdmahmood/Recipe-app.git',
+    liveDemo: 'https://github.com/yasinabdmahmood/Recipe-app.git',
+  },
+  {
+    title: 'Space  Traveller',
+    languages: ['React Js', 'Redux Js', 'Css'],
+    image: './images/space-1.png',
+    description: `About
+    In this project, We build with the real live data from
+    the SpaceX API. The application will allow users to book
+    rockets and join selected space missions. We build it using
+    react and redux.`,
+    year: 2022,
+    job: 'React Developer',
+    company: 'Benkis',
+  },
+  {
     title: 'Todo List',
     languages: ['Html', 'Css', 'Javascipt'],
     image: './images/toDo.png',
@@ -12,20 +38,6 @@ const projects = [
     company: 'BenKis',
     sourceCode: 'https://iambenkis.github.io/To-Do-list/dist/',
     liveDemo: 'https://github.com/iambenkis/To-Do-list',
-  },
-  {
-    title: 'Leaderboard',
-    languages: ['Html', 'Css', 'Javascipt'],
-    image: './images/leader7.png',
-    description: `A leaderboard showing the names and current scores of the
-    leading competitors.The project is set up as a javaScript
-    project using webpack and ES6 features.This leaderboard is a Api based application
-    for storing scores online!`,
-    year: 2022,
-    job: 'Front end Dev',
-    company: 'BenKis',
-    sourceCode: 'https://github.com/iambenkis/Leaderboard.git',
-    liveDemo: 'https://iambenkis.github.io/Leaderboard/dist/',
   },
   {
     title: 'Global Summit',
@@ -41,19 +53,6 @@ const projects = [
     company: 'BenKis',
     sourceCode: 'https://github.com/iambenkis/Global-summit-GMIS-.git',
     liveDemo: 'https://iambenkis.github.io/Global-summit-GMIS-/',
-  },
-  {
-    title: 'Space  Traveller',
-    languages: ['React Js', 'Redux Js', 'Css'],
-    image: './images/space-1.png',
-    description: `About
-    In this project, We build with the real live data from
-    the SpaceX API. The application will allow users to book
-    rockets and join selected space missions. We build it using
-    react and redux.`,
-    year: 2022,
-    job: 'React Developer',
-    company: 'Benkis',
   },
 ];
 
