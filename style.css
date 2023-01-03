@@ -66,6 +66,7 @@ body {
 .nav-bar i {
   font-size: 16px;
   cursor: pointer;
+  z-index: 1000;
 }
 
 .nav-bar .nav-list {
@@ -141,6 +142,23 @@ body {
 
 .pops-project img {
   margin-top: 0.5rem;
+}
+
+.see-project {
+  color: #6070ff;
+  font-size: 17px;
+  background: #fff;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  justify-self: start;
+  margin: 0;
+  padding: 0.3rem;
+  cursor: pointer;
+}
+
+.see-project:hover {
+  background-color: #396df2;
+  color: #fff;
 }
 
 .pops-project .text {
@@ -318,6 +336,20 @@ button {
   font-size: 32px;
   line-height: 44px;
   font-weight: 700;
+}
+
+.get-resume {
+  border: 1px solid #6070ff;
+  color: #396df2;
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: 0.5s;
+}
+
+.get-resume:hover {
+  color: #fff;
+  background-color: #396df2;
 }
 
 .caption {
@@ -687,23 +719,6 @@ textarea {
     padding: 24px;
   }
 
-  .see-project {
-    color: #6070ff;
-    font-size: 17px;
-    background: #fff;
-    border: 1px solid #6070ff;
-    border-radius: 8px;
-    justify-self: start;
-    margin: 0;
-    padding: 0.3rem;
-    cursor: pointer;
-  }
-
-  .see-project:hover {
-    background-color: #396df2;
-    color: #fff;
-  }
-
   .project-txt {
     width: 45%;
     padding-top: 1rem;
@@ -714,15 +729,6 @@ textarea {
   .about {
     padding: 114px 13%;
     border-top-right-radius: 50px;
-  }
-
-  .get-resume {
-    border: 1px solid #6070ff;
-    color: #396df2;
-    background-color: #fff;
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-    transition: 0.5s;
   }
 
   .about-content {
