@@ -195,6 +195,10 @@ body {
   height: 8px;
 }
 
+.langs-label img {
+  width: 3rem;
+}
+
 #caption img {
   margin-bottom: 0.7rem;
 }
@@ -258,10 +262,6 @@ button {
 
 .pops-project li:nth-child(even) {
   display: none;
-}
-
-.langs-label img {
-  width: 3rem;
 }
 
 .menu a {

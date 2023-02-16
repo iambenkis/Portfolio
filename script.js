@@ -24,6 +24,8 @@ const projects = [
     year: 2022,
     job: 'React Developer',
     company: 'Benkis',
+    sourceCode: 'https://github.com/iambenkis/Space-X-.git',
+    liveDemo: 'https://peaceful-empanada-525d25.netlify.app/',
   },
   {
     title: 'Todo List',
@@ -36,8 +38,8 @@ const projects = [
     year: 2022,
     job: 'Front end Dev',
     company: 'BenKis',
-    sourceCode: 'https://iambenkis.github.io/To-Do-list/dist/',
-    liveDemo: 'https://github.com/iambenkis/To-Do-list',
+    sourceCode: 'https://github.com/iambenkis/To-Do-list',
+    liveDemo: 'https://iambenkis.github.io/To-Do-list/dist/',
   },
   {
     title: 'Global Summit',
