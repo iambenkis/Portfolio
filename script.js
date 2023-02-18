@@ -10,7 +10,7 @@ const projects = [
     job: 'Front end Dev',
     company: 'BenKis',
     sourceCode: 'https://github.com/yasinabdmahmood/Recipe-app.git',
-    liveDemo: 'https://github.com/yasinabdmahmood/Recipe-app.git',
+    liveDemo: 'https://recipe-n3b7.onrender.com/',
   },
   {
     title: 'Space  Traveller',
